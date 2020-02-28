@@ -14,8 +14,13 @@ Setup a local development environment in one step
 * [Cross contract interaction](https://github.com/nearprotocol/near-bindgen/tree/master/examples/cross-contract-high-level)
 
 ### AssemblyScript examples
-* [Crypto Corgis](https://github.com/nearprotocol/corgis)
-* [Chess](https://github.com/nearprotocol/near-chess)
+repo|gitpod
+---|---
+[Counter](https://github.com/nearprotocol/counter)| [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/nearprotocol/counter)
+[Guest Book](https://github.com/nearprotocol/counter) | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/nearprotocol/guest-book)
+[Crypto Corgis](https://github.com/nearprotocol/corgis) | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/nearprotocol/corgis) |
+[Chess](https://github.com/nearprotocol/near-chess)|[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/nearprotocol/near-chess)
+
 
 ### Ethereum Virtual Machine (EVM) example
 * [NEAR EVM Demo](https://github.com/kcole16/near-evm-demo)
