@@ -14,7 +14,7 @@ Setup a local development environment in one step
 * [Cross contract interaction](https://github.com/nearprotocol/near-bindgen/tree/master/examples/cross-contract-high-level)
 
 ### AssemblyScript examples
-* [Crypto Corgis](https://github.com/nearprotocol/crypto-corgis-solution)
+* [Crypto Corgis](https://github.com/nearprotocol/corgis)
 * [Chess](https://github.com/nearprotocol/near-chess)
 
 ### Ethereum Virtual Machine (EVM) example
@@ -25,6 +25,11 @@ Setup a local development environment in one step
 
 ## Projects
 
-Projects that are actively building on NEAR.
+Projects that are actively building on NEAR:
+* [Flux](http://flux.market/)
+* [Stardust](https://stardust.gg/)
+* [Snark Art](http://snark.art/)
+* [Zod](https://www.zod.tv/)
+* [ArTerra](http://arterra.co/)
 
 
