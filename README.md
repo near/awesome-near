@@ -3,6 +3,7 @@
 > Curated list of resources: examples, libraries, projects.
 
 ## Getting Started
+Setup a local development environment in one step
 * [create-near-app](https://github.com/nearprotocol/create-near-app)
 
 ## Examples
@@ -16,7 +17,7 @@
 * [Crypto Corgis](https://github.com/nearprotocol/crypto-corgis-solution)
 * [Chess](https://github.com/nearprotocol/near-chess)
 
-### EVM example
+### Ethereum Virtual Machine (EVM) example
 * [NEAR EVM Demo](https://github.com/kcole16/near-evm-demo)
 
 ## Tutorials
