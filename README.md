@@ -22,7 +22,7 @@ repo|gitpod
 [Token Contract](https://github.com/nearprotocol/token-contract-as)| [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/nearprotocol/token-contract-as)
 [Counter](https://github.com/nearprotocol/counter)| [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/nearprotocol/counter)
 [Guest Book](https://github.com/nearprotocol/counter) | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/nearprotocol/guest-book)
-[Wallet Example](https://github.com/nearprotocol/token-contract-as)| [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/nearprotocol/wallet-example)
+[Wallet Example](https://github.com/nearprotocol/wallet-example)| [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/nearprotocol/wallet-example)
 [Crypto Corgis](https://github.com/nearprotocol/corgis) | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/nearprotocol/corgis) |
 [Chess](https://github.com/nearprotocol/near-chess)|[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/nearprotocol/near-chess)
 [Chat](https://github.com/nearprotocol/chat) |
@@ -48,5 +48,3 @@ Projects that are actively building on NEAR:
 * [Snark Art](http://snark.art/)
 * [Zod](https://www.zod.tv/)
 * [ArTerra](http://arterra.co/)
-
-
