@@ -1,0 +1,21 @@
+language: rust
+rust:
+  - stable
+  - nightly
+
+env:
+  - NODE_ENV=ci
+  - NODE_ENV=ci-staging
+cache: yarn
+
+before_install:
+  - rustup target add wasm32-unknown-unknown
+  - nvm install 10.16
+  - nvm use 10.16
+  - npm install -g yarn
+
+install:
+  - yarn install
+
+script:
+  - echo 'hello world'
