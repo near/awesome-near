@@ -21,7 +21,7 @@ repo|gitpod
 ---|---
 [Token Contract](https://github.com/nearprotocol/token-contract-as)| [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/nearprotocol/token-contract-as)
 [Counter](https://github.com/nearprotocol/counter)| [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/nearprotocol/counter)
-[Guest Book](https://github.com/nearprotocol/counter) | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/nearprotocol/guest-book)
+[Guest Book](https://github.com/near-examples/guest-book) | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/nearprotocol/guest-book)
 [Wallet Example](https://github.com/nearprotocol/wallet-example)| [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/nearprotocol/wallet-example)
 [Crypto Corgis](https://github.com/nearprotocol/corgis) | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/nearprotocol/corgis) |
 [Chess](https://github.com/nearprotocol/near-chess)|[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/nearprotocol/near-chess)
