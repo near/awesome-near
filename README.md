@@ -29,7 +29,7 @@ repo|gitpod
 
 
 ### Ethereum Virtual Machine (EVM) examples
-* [NEAR EVM Demo](https://github.com/kcole16/near-evm-demo)
+* [NEAR EVM Demo](https://github.com/nearprotocol/near-evm-demo)
 
 ### Integrations and off-chain services
 
