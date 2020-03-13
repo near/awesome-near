@@ -13,7 +13,6 @@ Setup a local development environment in one step
 * [Fungible token contract](https://github.com/nearprotocol/near-bindgen/tree/master/examples/fun-token)
 * [Cross contract interaction](https://github.com/nearprotocol/near-bindgen/tree/master/examples/cross-contract-high-level)
 * [Status message posting contract](https://github.com/nearprotocol/near-bindgen/tree/master/examples/status-message)
-* [Ethereum light client contract](https://github.com/nearprotocol/near-bridge/tree/master/ethbridge)
 * [Send NEAR via link contract](https://github.com/nearprotocol/near-linkdrop)
 
 ### AssemblyScript examples
@@ -26,10 +25,6 @@ repo|gitpod
 [Crypto Corgis](https://github.com/nearprotocol/corgis) | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/nearprotocol/corgis) |
 [Chess](https://github.com/nearprotocol/near-chess)|[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/nearprotocol/near-chess)
 [Chat](https://github.com/nearprotocol/chat) |
-
-
-### Ethereum Virtual Machine (EVM) examples
-* [NEAR EVM Demo](https://github.com/nearprotocol/near-evm-demo)
 
 ### Integrations and off-chain services
 
