@@ -24,7 +24,7 @@ repo|gitpod
 [Wallet Example](https://github.com/nearprotocol/wallet-example)| [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/nearprotocol/wallet-example)
 [Crypto Corgis](https://github.com/nearprotocol/corgis) | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/nearprotocol/corgis) |
 [Chess](https://github.com/nearprotocol/near-chess)|[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/nearprotocol/near-chess)
-[Chat](https://github.com/nearprotocol/chat) |
+[Chat](https://github.com/nearprotocol/chat) | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/nearprotocol/chat)
 
 ### Integrations and off-chain services
 
