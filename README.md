@@ -32,9 +32,6 @@ repo|gitpod
 * [Explorer backend](https://github.com/nearprotocol/near-explorer/tree/master/backend)
 * [Bridge relay service](https://github.com/nearprotocol/near-bridge/tree/master/ethrelay)
 
-## Tutorials
-* [ETHDenver Workshop](https://github.com/nearprotocol/ethdenver-workshop)
-
 ## Projects
 
 Projects that are actively building on NEAR:
