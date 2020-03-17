@@ -11,8 +11,8 @@ Setup a local development environment in one step
 ### Rust examples
 
 * [Fungible token contract](https://github.com/nearprotocol/near-bindgen/tree/master/examples/fun-token)
-* [Cross contract interaction](https://github.com/nearprotocol/near-bindgen/tree/master/examples/cross-contract-high-level)
-* [Status message posting contract](https://github.com/nearprotocol/near-bindgen/tree/master/examples/status-message)
+* [Cross contract interaction](https://github.com/near-examples/rust-high-level-cross-contract)
+* [Status message posting contract](https://github.com/near-examples/rust-status-message)
 * [Send NEAR via link contract](https://github.com/nearprotocol/near-linkdrop)
 
 ### AssemblyScript examples
