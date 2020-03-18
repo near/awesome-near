@@ -16,7 +16,7 @@ cd examples || (mkdir examples && cd examples);
 
 for i in "${EXAMPLES[@]}"
 do
-  name=$(dirname "$i");
+  name=$(basename "$i");
   if test -d "./$name"; then
     (cd "$name"; git pull);
   else 
