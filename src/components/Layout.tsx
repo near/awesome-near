@@ -1,5 +1,7 @@
 import React from 'react'
-import * as styles from './Layout.module.css'
+
+// use require to avoid typescript complaints
+const styles = require('./Layout.module.css')
 
 type Props = {
   children: React.ReactNode

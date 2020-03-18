@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import * as styles from './Grid.module.css'
 import { RepositoryType } from '../pages/index'
 
 // use require to avoid typescript complaints
+const styles = require('./Grid.module.css')
 const defaultBanner = require('../images/default-banner.svg')
 
 type CardProps = {

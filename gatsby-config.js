@@ -8,7 +8,6 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-typescript',
-    'gatsby-transformer-typescript-css-modules',
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-graphql',
