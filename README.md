@@ -39,4 +39,4 @@ Projects that are actively building on NEAR:
 * [Stardust](https://stardust.gg/)
 * [Snark Art](http://snark.art/)
 * [Zod](https://www.zod.tv/)
-* [ArTerra](http://arterra.co/)
+* [ARterra](http://arterra.co/)
