@@ -1,0 +1,50 @@
+{
+  "name": "gatsby-starter-hello-world",
+  "private": true,
+  "description": "A simplified bare-bones starter for Gatsby",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "dependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.1",
+    "react-markdown": "^4.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.23",
+    "@types/react-dom": "^16.9.5",
+    "@typescript-eslint/eslint-plugin": "^2.24.0",
+    "@typescript-eslint/parser": "^2.24.0",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "gatsby": "^2.19.43",
+    "gatsby-plugin-manifest": "^2.2.48",
+    "gatsby-plugin-react-helmet": "^3.1.24",
+    "gatsby-plugin-typescript": "^2.2.5",
+    "gatsby-source-graphql": "^2.1.35",
+    "gatsby-transformer-typescript-css-modules": "^1.0.14",
+    "graphql": "^14.6.0",
+    "typescript": "^3.8.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
+}
