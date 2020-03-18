@@ -12,7 +12,7 @@ EXAMPLES=('https://github.com/near-examples/token-contract-as'
 # TODO=('https://github.com/nearprotocol/corgis'
 #       )
 
-cd examples || (mkdir examples && cd examples);
+cd examples || mkdir examples && cd examples;
 
 for i in "${EXAMPLES[@]}"
 do
