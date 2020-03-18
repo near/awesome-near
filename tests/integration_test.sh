@@ -20,7 +20,7 @@ do
   if test -d "./$name"; then
     (cd "$name"; git pull);
   else 
-    git clone "$name";
+    git clone "$i";
   fi
   (cd "$name" || exit 1; yarn install && yarn build && yarn test);
 done
