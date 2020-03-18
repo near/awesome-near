@@ -1,8 +1,8 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import Grid from '../components/Grid'
-import SEO from '../components/SEO'
-import Layout from '../components/Layout'
+import Grid from '../components/grid'
+import SEO from '../components/seo'
+import Layout from '../components/layout'
 
 const App = (props: { data: QueryData }) => (
   <Layout title="NEAR Examples">

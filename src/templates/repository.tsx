@@ -2,8 +2,8 @@ import React from 'react'
 import Markdown from 'react-markdown'
 import { graphql } from 'gatsby'
 import { RepositoryType } from '../pages'
-import Layout from '../components/Layout'
-import SEO from '../components/SEO'
+import Layout from '../components/layout'
+import SEO from '../components/seo'
 
 // bypass typescript by using commonjs syntax:
 // https://github.com/microsoft/TypeScript-React-Starter/issues/12

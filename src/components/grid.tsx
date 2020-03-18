@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import { RepositoryType } from '../pages/index'
 
 // use require to avoid typescript complaints
-const styles = require('./Grid.module.css')
+const styles = require('./grid.module.css')
 const defaultBanner = require('../images/default-banner.svg')
 
 type CardProps = {

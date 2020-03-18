@@ -44,7 +44,7 @@ exports.createPages = async ({ actions, graphql }) => {
   data.github.search.repositories.forEach(repo => {
     actions.createPage({
       path: repo.name,
-      component: path.resolve('./src/templates/Repository.tsx'),
+      component: path.resolve('./src/templates/repository.tsx'),
       context: { name: repo.name }
     })
   })
