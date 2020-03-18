@@ -26,6 +26,13 @@ const Card = ({ repo }: CardProps) => (
       <br/>
       {repo.description}
     </div>
+    {!!repo.repositoryTopics.nodes.length && (
+      <footer className={styles.cardFooter}>
+        {repo.repositoryTopics.nodes.map(node => (
+          <div className={styles.label} key={node.id}>{node.topic.name}</div>
+        ))}
+      </footer>
+    )}
   </Link>
 )
 

@@ -38,3 +38,17 @@
   background-size: cover;
   margin: -3px;
 }
+
+.cardFooter {
+  padding: 0 0.75em 0.75em;
+  margin-left: -0.5em;
+}
+
+.label {
+  box-shadow: 0 0 2px var(--gray) inset;
+  border-radius: 2px;
+  display: inline-block;
+  font-size: 0.75em;
+  padding: 0 0.5em;
+  margin-left: 0.5em;
+}
