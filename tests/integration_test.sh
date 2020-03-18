@@ -6,7 +6,7 @@ EXAMPLES=('https://github.com/near-examples/token-contract-as'
           'https://github.com/near-examples/wallet-example'
           'https://github.com/near-examples/guest-book'
           'https://github.com/near-examples/chat'
-          'https://github.com/nearprotocol/chess'
+          'https://github.com/nearprotocol/near-chess'
           )
 
 # TODO=('https://github.com/nearprotocol/corgis'
