@@ -1,0 +1,11 @@
+.content {
+  margin: 0 auto;
+  max-width: 50em;
+  padding: 1em;
+}
+
+.banner {
+  height: 30vh;
+  background-size: cover;
+  background-position: center;
+}

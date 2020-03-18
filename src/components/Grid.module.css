@@ -1,0 +1,40 @@
+.grid {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+
+.cardWrap,
+.cardWrap:hover,
+.cardWrap:focus,
+.cardWrap:active {
+  color: var(--fg);
+  position: static;
+  text-decoration: none;
+}
+.cardWrap {
+  border-radius: 4px;
+  box-shadow: 0 0 1px var(--gray);
+  overflow: hidden;
+  filter: grayscale(1);
+}
+.cardWrap:hover,
+.cardWrap:focus {
+  box-shadow: 0 0 2px var(--fg);
+  filter: grayscale(0);
+}
+.cardWrap:active {
+  box-shadow: 0 0 2px var(--gray) inset;
+}
+
+.cardContent {
+  padding: 0.75em;
+}
+
+.banner {
+  height: 4em;
+  background-position: center;
+  background-size: cover;
+  margin: -3px;
+}
