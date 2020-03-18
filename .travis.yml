@@ -18,4 +18,4 @@ install:
   - yarn install
 
 script:
-  - echo 'hello world'
+  - ./tests/integration_test.sh
