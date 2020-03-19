@@ -1,7 +1,7 @@
 import React from 'react'
 import Markdown from 'react-markdown'
 import { graphql } from 'gatsby'
-import { RepositoryType } from '../pages'
+import { RepositoryType } from '../data/github'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 

@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 import Grid from '../components/grid'
 import SEO from '../components/seo'
 import Layout from '../components/layout'
+import { RepositoryType } from '../data/github'
 
 const App = (props: { data: QueryData }) => (
   <Layout title="NEAR Examples">
@@ -15,29 +16,6 @@ const App = (props: { data: QueryData }) => (
 )
 
 export default App
-
-export type RepositoryType = {
-  id: string
-  name: string
-  description: string
-  url: string
-  isPrivate: boolean
-  openGraphImageUrl: string
-  usesCustomOpenGraphImage: boolean
-  readme: {
-    text: string
-  }
-  repositoryTopics: {
-    nodes: {
-      id: string
-      url: string
-      topic: {
-        id: string
-        name: string
-      }
-    }[]
-  }
-}
 
 type QueryData = {
   github: {

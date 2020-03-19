@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { RepositoryType } from '../pages/index'
+import { RepositoryType } from '../data/github'
 
 // use require to avoid typescript complaints
 const styles = require('./grid.module.css')
