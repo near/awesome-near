@@ -10,7 +10,7 @@ Setup a local development environment in one step
 
 ### Rust examples
 
-* [Fungible token contract](https://github.com/nearprotocol/near-bindgen/tree/master/examples/fun-token)
+* [Fungible token contract](https://github.com/nearprotocol/near-sdk-rs/tree/master/examples/fungible-token)
 * [Cross contract interaction](https://github.com/near-examples/rust-high-level-cross-contract)
 * [Status message posting contract](https://github.com/near-examples/rust-status-message)
 * [Send NEAR via link contract](https://github.com/nearprotocol/near-linkdrop)
