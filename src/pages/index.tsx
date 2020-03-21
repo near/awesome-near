@@ -2,17 +2,20 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Grid from '../components/grid'
 import SEO from '../components/seo'
-import Layout from '../components/layout'
+import Header from '../components/header'
 import { RepositoryType } from '../data/github'
 
 const App = (props: { data: QueryData }) => (
-  <Layout title="NEAR Examples">
+  <>
     <SEO title="Home" />
-    <p>
-      Wondering what you can build with <a href="https://nearprotocol.com/">NEAR</a>? Check out these examples for inspiration!
-    </p>
+    <Header>
+      <h1 style={{ marginBottom: 0 }}>Examples</h1>
+      <p style={{ marginTop: 0 }}>
+        Wondering what you can build with <a href="https://nearprotocol.com/">NEAR</a>? Check out these examples for inspiration!
+      </p>
+    </Header>
     <Grid repositories={props.data.github.search.repositories} />
-  </Layout>
+  </>
 )
 
 export default App

@@ -1,0 +1,25 @@
+.wrap {
+  margin: 1.7em auto 1.5em;
+  padding: 1em;
+  display: flex;
+}
+
+.icon {
+  background-image: url(../images/near-icon-black.svg);
+  background-size: cover;
+  display: inline-block;
+  height: 6.5em; width: 6.5em;
+  margin-right: 0.5em;
+  margin-left: -2.6em;
+  position: relative;
+  text-indent: -3000em;
+}
+@media (prefers-color-scheme: dark) {
+  .icon {
+    background-image: url(../images/near-icon-white.svg);
+  }
+}
+
+.content {
+  flex: 1;
+}

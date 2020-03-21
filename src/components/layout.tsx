@@ -6,19 +6,17 @@ const styles = require('./layout.module.css')
 type Props = {
   children: React.ReactNode
   banner?: string
-  title?: string
+  title: string
 }
 
 const Layout = ({ banner, children, title }: Props) => (
   <>
-    {banner &&
-      <div
-        className={styles.banner}
-        style={{ backgroundImage: `url(${banner})` }}
-      />
-    }
+    <h1 className={styles.banner}>
+      <span className={styles.icon}>NEAR</span>
+      {title}
+    </h1>
     <div className={styles.content}>
-      {title && <h1>{title}</h1>}
+      {banner && <img alt="" src={banner} />}
       {children}
     </div>
   </>

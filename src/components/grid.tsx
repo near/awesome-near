@@ -12,19 +12,21 @@ type CardProps = {
 
 const Card = ({ repo }: CardProps) => (
   <Link to={repo.name} className={styles.cardWrap}>
-    <div
-      className={styles.banner}
-      style={{
-        backgroundImage: `url(${repo.usesCustomOpenGraphImage
-          ? repo.openGraphImageUrl
-          : defaultBanner
-        })`
-      }}
+    <img
+      alt=""
+      className={styles.image}
+      src={repo.usesCustomOpenGraphImage
+        ? repo.openGraphImageUrl
+        : defaultBanner
+      }
     />
     <div className={styles.cardContent}>
-      <strong>{repo.name}</strong>
-      <br/>
-      {repo.description}
+      <h2>
+        {repo.readme.text.split('\n')[0]}
+      </h2>
+      <p>
+        {repo.description}
+      </p>
     </div>
     {!!repo.repositoryTopics.nodes.length && (
       <footer className={styles.cardFooter}>
