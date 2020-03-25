@@ -27,14 +27,22 @@
 }
 
 html {
-  --bg: #fff;
-  --fg: #25282A;
-  --primary: #0072CE;
-  --secondary: #FF585D;
-  --tertiary: #8FD6BD;
-  --selected: #F0EC74;
+  --white: #fff;
+  --slate: #25282A;
+  --royal: #0072CE;
+  --blue: #61D1E3;
+  --red: #FF585D;
+  --green: #8FD6BD;
+  --yellow: #F0EC74;
   --gray: #ddd;
   --dark-gray: #888;
+
+  --bg: var(--white);
+  --fg: var(--slate);
+  --primary: var(--royal);
+  --secondary: var(--red);
+  --tertiary: var(--green);
+  --selected: var(--yellow);
 
   background-color: var(--bg);
   color: var(--fg);
@@ -46,9 +54,9 @@ html {
 
 @media (prefers-color-scheme: dark) {
   html {
-    --bg: #25282A;
-    --fg: #fff;
-    --primary: #6AD1E3;
+    --bg: var(--slate);
+    --fg: var(--white);
+    --primary: var(--blue);
     --gray: #555;
   }
 }
@@ -84,5 +92,6 @@ a:hover, a:focus, a:active {
 }
 
 img {
+  display: block;
   max-width: 100%;
 }
