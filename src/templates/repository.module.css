@@ -1,0 +1,34 @@
+.button,
+.button:hover,
+.button:focus,
+.button:active {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.button {
+  background-color: var(--royal);
+  border-radius: 0.5em;
+  padding: 0.5em 1em;
+  position: relative;
+  font-size: 1.25em;
+  text-align: center;
+  transition: transform 80ms;
+}
+
+.button:hover,
+.button:focus {
+  transform: scale(1.02);
+}
+
+.button:active {
+  transform: scale(0.99);
+}
+
+.button > * {
+  vertical-align: middle;
+}
+
+.button > *:first-child {
+  margin-right: 0.5em;
+}
