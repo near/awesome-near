@@ -1,11 +1,6 @@
 require('dotenv').config()
 
 module.exports = {
-  siteMetadata: {
-    title: 'NEAR Examples',
-    description: 'A curated list of great demos and starter apps built with NEAR Protocol',
-    author: '@NEARProtocol'
-  },
   plugins: [
     'gatsby-plugin-typescript',
     'gatsby-plugin-react-helmet',

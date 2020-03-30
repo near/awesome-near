@@ -30,7 +30,7 @@ const Repository = ({ data }: Props) => {
   return (
     <>
       <SEO
-        title={title}
+        title={'NEAR Example: ' + title}
         description={repo.description + ' – An example showing the sort of thing you can build with NEAR Protocol'}
         meta={[
           {
@@ -38,8 +38,12 @@ const Repository = ({ data }: Props) => {
             content: 'summary_large_image'
           },
           {
-            name: 'og:image',
+            property: 'og:image',
             content: image
+          },
+          {
+            property: 'og:url',
+            content: repo.url
           }
         ]}
       />

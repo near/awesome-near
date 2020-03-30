@@ -6,38 +6,41 @@
  */
 
 import React from 'react'
-import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import { useStaticQuery, graphql } from 'gatsby'
 
-function SEO ({ description, lang, meta, title }) {
-  const { site } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            description
-            author
-          }
-        }
-      }
-    `
-  )
+type Meta = {
+  name: string
+  content: string
+} | {
+  content: string
+  property: string
+}
 
-  const metaDescription = description || site.siteMetadata.description
+type Props = {
+  author?: string
+  description?: string
+  lang?: string
+  meta?: Meta[]
+  title: string
+}
 
+function SEO ({
+  author = '@NEARProtocol',
+  description = 'A curated list of great demos and starter apps built with NEAR Protocol',
+  lang = 'en',
+  meta = [],
+  title = 'NEAR Examples'
+}: Props) {
   return (
     <Helmet
       htmlAttributes={{
         lang
       }}
       title={title}
-      titleTemplate={`%s · ${site.siteMetadata.title}`}
       meta={[
         {
           name: 'description',
-          content: metaDescription
+          content: description
         },
         {
           property: 'og:title',
@@ -45,7 +48,7 @@ function SEO ({ description, lang, meta, title }) {
         },
         {
           property: 'og:description',
-          content: metaDescription
+          content: description
         },
         {
           property: 'og:type',
@@ -57,7 +60,7 @@ function SEO ({ description, lang, meta, title }) {
         },
         {
           name: 'twitter:creator',
-          content: site.siteMetadata.author
+          content: author
         },
         {
           name: 'twitter:title',
@@ -65,24 +68,11 @@ function SEO ({ description, lang, meta, title }) {
         },
         {
           name: 'twitter:description',
-          content: metaDescription
+          content: description
         }
       ].concat(meta)}
     />
   )
-}
-
-SEO.defaultProps = {
-  lang: 'en',
-  meta: [],
-  description: ''
-}
-
-SEO.propTypes = {
-  description: PropTypes.string,
-  lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired
 }
 
 export default SEO
