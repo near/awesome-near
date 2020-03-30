@@ -31,7 +31,7 @@ const Repository = ({ data }: Props) => {
     <>
       <SEO
         title={title}
-        description={repo.description + ' • An example showing the sort of thing you can build with NEAR Protocol'}
+        description={repo.description + ' – An example showing the sort of thing you can build with NEAR Protocol'}
         meta={[
           {
             name: 'twitter:card',
