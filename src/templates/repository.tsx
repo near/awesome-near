@@ -43,7 +43,7 @@ const Repository = ({ data }: Props) => {
           },
           {
             property: 'og:url',
-            content: repo.url
+            content: `https://examples.nearprotocol.com/${repo.name}/`
           }
         ]}
       />
