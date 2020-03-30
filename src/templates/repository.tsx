@@ -28,13 +28,7 @@ const Repository = ({ data }: Props) => {
     <>
       <SEO title={title} />
       <Header>
-        <div style={{
-          alignItems: 'center',
-          display: 'flex',
-          justifyContent: 'space-between'
-        }}>
-          <h1>{title}</h1>
-        </div>
+        <h1>{title}</h1>
       </Header>
       <div style={{
         margin: '0 auto',
