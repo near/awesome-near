@@ -24,9 +24,25 @@ const Repository = ({ data }: Props) => {
   const { repo } = data.github
   const title = repo.readme.text.split('\n')[0]
   const readme = repo.readme.text.replace(/[\s\S]*<!-- [^>]+ -->/, '')
+  const image = repo.usesCustomOpenGraphImage
+    ? repo.openGraphImageUrl
+    : defaultBanner
   return (
     <>
-      <SEO title={title} />
+      <SEO
+        title={title}
+        description={repo.description + ' • An example showing the sort of thing you can build with NEAR Protocol'}
+        meta={[
+          {
+            name: 'twitter:card',
+            content: 'summary_large_image'
+          },
+          {
+            name: 'og:image',
+            content: image
+          }
+        ]}
+      />
       <Header>
         <h1>{title}</h1>
       </Header>
@@ -34,13 +50,7 @@ const Repository = ({ data }: Props) => {
         margin: '0 auto',
         maxWidth: '45em'
       }}>
-        <img
-          alt=""
-          src={repo.usesCustomOpenGraphImage
-            ? repo.openGraphImageUrl
-            : defaultBanner
-          }
-        />
+        <img alt="" src={image} />
         <p style={{
           display: 'grid',
           gridGap: '1.5em',
