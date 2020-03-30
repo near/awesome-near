@@ -7,7 +7,7 @@ import { RepositoryType } from '../data/github'
 
 const App = (props: { data: QueryData }) => (
   <>
-    <SEO title="Home" />
+    <SEO />
     <Header>
       <h1 style={{ marginBottom: 0 }}>Examples</h1>
       <p style={{ marginTop: 0 }}>
