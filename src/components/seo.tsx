@@ -21,7 +21,7 @@ type Props = {
   description?: string
   lang?: string
   meta?: Meta[]
-  title: string
+  title?: string
 }
 
 function SEO ({
