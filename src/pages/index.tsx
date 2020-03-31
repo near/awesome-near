@@ -11,7 +11,7 @@ const App = (props: { data: QueryData }) => (
     <Header>
       <h1 style={{ marginBottom: 0 }}>Examples</h1>
       <p style={{ marginTop: 0 }}>
-        Wondering what you can build with <a href="https://nearprotocol.com/">NEAR</a>? Check out these examples for inspiration!
+        Wondering what you can build with <a href="https://nearprotocol.com/">NEAR</a>? Check out these examples for inspiration! You can also <a href="https://github.com/near-examples">view these examples on GitHub</a>.
       </p>
     </Header>
     <Grid repositories={props.data.github.search.repositories} />
