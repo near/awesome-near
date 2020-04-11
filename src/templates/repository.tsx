@@ -1,7 +1,7 @@
 import React from 'react'
 import Markdown from 'react-markdown'
 import { graphql } from 'gatsby'
-import { RepositoryType } from '../data/github'
+import { RepositoryTypeRaw, shape } from '../data/github'
 import Header from '../components/header'
 import SEO from '../components/seo'
 import Gitpod from './gitpod'
@@ -15,15 +15,15 @@ const styles = require('./repository.module.css')
 type Props = {
   data: {
     github: {
-      repo: RepositoryType
+      repo: RepositoryTypeRaw
     }
   }
 }
 
 const Repository = ({ data }: Props) => {
-  const { repo } = data.github
-  const title = repo.readme.text.split('\n')[0]
-  const readme = repo.readme.text.replace(/[\s\S]*<!-- [^>]+ -->/, '')
+  const repo = shape(data.github.repo)
+  const title = repo.readme.split('\n')[0]
+  const readme = repo.readme.replace(/[\s\S]*<!-- [^>]+ -->/, '')
   const image = repo.usesCustomOpenGraphImage
     ? repo.openGraphImageUrl
     : defaultBanner
@@ -87,7 +87,6 @@ export const query = graphql`
         name
         description
         url
-        isPrivate
         openGraphImageUrl
         usesCustomOpenGraphImage
         readme: object(expression: "master:README.md") {

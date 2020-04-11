@@ -22,16 +22,16 @@ const Card = ({ repo }: CardProps) => (
     />
     <div className={styles.cardContent}>
       <h2>
-        {repo.readme.text.split('\n')[0]}
+        {repo.readme.split('\n')[0]}
       </h2>
       <p>
         {repo.description}
       </p>
     </div>
-    {!!repo.repositoryTopics.nodes.length && (
+    {!!repo.topics.length && (
       <footer className={styles.cardFooter}>
-        {repo.repositoryTopics.nodes.map(node => (
-          <div className={styles.label} key={node.id}>{node.topic.name}</div>
+        {repo.topics.map(topic => (
+          <div className={styles.label} key={topic}>{topic}</div>
         ))}
       </footer>
     )}
