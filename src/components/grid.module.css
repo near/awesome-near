@@ -1,19 +1,23 @@
 .grid {
   display: grid;
-  grid-gap: 3em 2.5em;
-  grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+  grid-gap: 2em;
   margin: 0 auto;
 }
 
-
-.cardWrap,
-.cardWrap:hover,
-.cardWrap:focus,
-.cardWrap:active {
-  color: var(--fg);
-  position: static;
-  text-decoration: none;
+@media (min-width: 475px) {
+  .grid {
+    grid-gap: 2.5em 2em;
+    grid-template-columns: repeat(2, minmax(15em, 1fr));
+  }
 }
+
+@media (min-width: 775px) {
+  .grid {
+    grid-gap: 3em 2.5em;
+    grid-template-columns: repeat(3, minmax(15em, 1fr));
+  }
+}
+
 .cardWrap {
   border: 3px solid var(--gray);
   overflow: hidden;

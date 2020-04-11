@@ -9,12 +9,11 @@ type RepositoryTopic = {
   }
 }
 
-export type RepositoryType = {
+export type RepositoryTypeRaw = {
   id: string
   name: string
   description: string
   url: string
-  isPrivate: boolean
   openGraphImageUrl: string
   usesCustomOpenGraphImage: boolean
   readme: {
@@ -23,6 +22,17 @@ export type RepositoryType = {
   repositoryTopics: {
     nodes: RepositoryTopic[]
   }
+}
+
+export type RepositoryType = {
+  id: string
+  name: string
+  description: string
+  url: string
+  openGraphImageUrl: string
+  usesCustomOpenGraphImage: boolean
+  readme: string
+  topics: string[]
 }
 
 // unfortunately, Gatsby makes it difficult (maybe impossible?) to use
@@ -34,7 +44,6 @@ export const repositoryAttributes = `
   name
   description
   url
-  isPrivate
   openGraphImageUrl
   usesCustomOpenGraphImage
   readme: object(expression: "master:README.md") {
@@ -53,3 +62,60 @@ export const repositoryAttributes = `
     }
   }
 `
+
+export type QueryData = {
+  github: {
+    search: {
+      repositories: RepositoryTypeRaw[]
+    }
+  }
+}
+
+/*
+ * For use when extracting repositories from raw GitHub graphql query
+ *
+ * - Navigates graphql data structure
+ * - Cleans up shape of data
+ * - Removes the ready-to-use topic
+ * - Filters repositories using URL params
+ */
+export function extractRepositories (data: QueryData): RepositoryType[] {
+  return data.github.search.repositories.map(shape).filter(filter)
+}
+
+export function shape (repository: RepositoryTypeRaw): RepositoryType {
+  const repositoryCopy = { ...repository }
+  const readme = repositoryCopy.readme.text
+  delete repositoryCopy.readme
+
+  const topics = repositoryCopy.repositoryTopics.nodes
+    .map(n => n.topic.name)
+    .filter(n => n !== 'ready-to-use')
+  delete repositoryCopy.repositoryTopics
+
+  return { ...repositoryCopy, readme, topics }
+}
+
+function filter (repository: RepositoryType): boolean {
+  const search = typeof window !== 'undefined' && !!window.location.search &&
+    window.location.search.slice(1).split('&').reduce(
+      (acc, param) => {
+        const [key, value] = param.split('=')
+        acc[key] = value
+        return acc
+      },
+      {} as { [key: string]: string }
+    )
+
+  const query = search && search.q.toLowerCase()
+
+  if (!query) return true
+
+  const topicMatched = !!repository.topics.find(
+    t => t.toLowerCase().match(query)
+  )
+
+  const nameMatched = !!repository.name.toLowerCase().match(query)
+
+  return topicMatched || nameMatched
+}
