@@ -8,11 +8,18 @@
   background-image: url(../images/near-icon-black.svg);
   background-size: cover;
   display: inline-block;
-  height: 6.5em; width: 6.5em;
-  margin-right: 0.5em;
-  margin-left: -2.6em;
+  height: 3.25em; width: 3.25em;
+  margin-top: 1.6em;
+  margin-right: 2.1em;
+  margin-left: -1em;
   position: relative;
   text-indent: -3000em;
+}
+.icon:focus {
+  outline: 1px solid var(--secondary);
+}
+.icon:active {
+  outline: none;
 }
 @media (prefers-color-scheme: dark) {
   .icon {

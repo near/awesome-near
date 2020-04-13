@@ -18,14 +18,16 @@
   border: 3px solid var(--gray);
   overflow: hidden;
   border-radius: 2px;
-  transition: transform 100ms;
+  transition: all 200ms;
 }
 .cardWrap:hover,
 .cardWrap:focus {
-  transform: scale(1.05);
+  transform: translateY(-3px);
+  border: 3px solid var(--dark-gray);
 }
 .cardWrap:active {
-  transform: scale(0.95);
+  transform: translateY(0);
+  transition: all 35ms;
 }
 
 .image {
