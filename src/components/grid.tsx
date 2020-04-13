@@ -11,7 +11,7 @@ type CardProps = {
 }
 
 const Card = ({ repo }: CardProps) => (
-  <Link to={repo.name} className={styles.cardWrap}>
+  <Link to={'/' + repo.name} className={styles.cardWrap}>
     <img
       alt=""
       className={styles.image}
