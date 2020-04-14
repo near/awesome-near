@@ -18,6 +18,14 @@
   }
 }
 
+.cardWrap,
+.cardWrap:hover,
+.cardWrap:focus,
+.cardWrap:active {
+  color: var(--fg);
+  text-decoration: none;
+}
+
 .cardWrap {
   border: 3px solid var(--gray);
   overflow: hidden;
