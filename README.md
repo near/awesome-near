@@ -3,20 +3,25 @@
 > Curated list of resources: examples, libraries, projects.
 
 ## Getting Started
-Setup a local development environment in one step
+NEAR basic resources:
+* [NEAR Key Concepts](https://docs.nearprotocol.com/docs/concepts/overview)
+* [NEAR Dev Documentation](https://docs.nearprotocol.com/)
+* [NEAR Explorer](https://explorer.nearprotocol.com/)
+
+Setup a local development environment in one step:
 * [create-near-app](https://github.com/nearprotocol/create-near-app)
 
 ## Examples
 
-### Rust examples
+### Rust Examples
 
 * [Fungible token contract](https://github.com/nearprotocol/near-sdk-rs/tree/master/examples/fungible-token)
 * [Cross contract interaction](https://github.com/near-examples/rust-high-level-cross-contract)
 * [Status message posting contract](https://github.com/near-examples/rust-status-message)
 * [Send NEAR via link contract](https://github.com/nearprotocol/near-linkdrop)
 
-### AssemblyScript examples
-repo|gitpod
+### AssemblyScript Examples
+Repo|Gitpod
 ---|---
 [Token Contract](https://github.com/near-examples/token-contract-as)| [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/near-examples/token-contract-as)
 [Counter](https://github.com/near-examples/counter)| [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/near-examples/counter)
@@ -26,7 +31,16 @@ repo|gitpod
 [Chess](https://github.com/nearprotocol/near-chess)|[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/nearprotocol/near-chess)
 [Chat](https://github.com/near-examples/chat) | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/near-examples/chat)
 
-### Integrations and off-chain services
+### Rust Examples
+Repo|Gitpod
+---|---
+[Status Message](https://github.com/near-examples/rust-status-message)| [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/near-examples/rust-status-message)
+[Fungible Token Contract](https://github.com/near-examples/rust-fungible-token)| [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/near-examples/rust-fungible-token)
+[Proof of Work Faucet](https://github.com/near-examples/pow-faucet)| [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/near-examples/pow-faucet)
+[Proof of Work Transfer Faucet](https://github.com/near-examples/token-printer)| [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/near-examples/token-printer)
+[High-level cross contract calls](https://github.com/near-examples/rust-high-level-cross-contract)| [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/near-examples/rust-high-level-cross-contract)
+
+### Integrations and Off-chain Services
 
 * [Wallet backend](https://github.com/nearprotocol/near-contract-helper)
 * [Explorer backend](https://github.com/nearprotocol/near-explorer/tree/master/backend)
