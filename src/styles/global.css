@@ -36,6 +36,7 @@ html {
   --yellow: #F0EC74;
   --gray: #ddd;
   --dark-gray: #888;
+  --light-gray: #f8f8f8;
 
   --bg: var(--white);
   --fg: var(--slate);
@@ -75,6 +76,24 @@ h1, h2, h3 {
   font-family: BwSeidoRound,sans-serif;
   font-weight: 500;
   line-height: 1.1;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 5px;
+  height: 5px;
+  -webkit-overflow-scrolling: auto;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 40px;
+  background-color: rgba(0,0,0,.1);
+  -webkit-box-shadow: 0 0 1px rgba(255,255,255,.1);
+}
+
+pre {
+  overflow-x: scroll;
+  padding: 5px 10px;
+  background-color: var(--light-gray);
 }
 
 ::selection {
