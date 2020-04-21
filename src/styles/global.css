@@ -59,6 +59,7 @@ html {
     --fg: var(--white);
     --primary: var(--blue);
     --gray: #555;
+    --light-gray: #333
   }
 }
 
@@ -88,6 +89,12 @@ h1, h2, h3 {
   border-radius: 40px;
   background-color: rgba(0,0,0,.1);
   box-shadow: 0 0 1px rgba(255,255,255,.1);
+}
+@media (prefers-color-scheme: dark) {
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(255,255,255,.1);
+    box-shadow: 0 0 1px rgba(0,0,0,.1);
+  }
 }
 
 pre {
