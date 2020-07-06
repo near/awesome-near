@@ -50,7 +50,6 @@ Repo|Gitpod
 
 Projects that are actively building on NEAR:
 * [Flux](http://flux.market/)
-* [Stardust](https://stardust.gg/)
 * [Snark Art](http://snark.art/)
 * [Zod](https://www.zod.tv/)
 * [ARterra](http://arterra.co/)
