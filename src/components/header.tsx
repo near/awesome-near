@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import Container from './container'
 
 // use require to avoid typescript complaints
 const styles = require('./header.module.css')
@@ -21,12 +22,14 @@ type Props = {
 }
 
 const Header = ({ children }: Props) => (
-  <header className={styles.wrap}>
-    <ConditionalLink />
-    <div className={styles.content}>
-      {children}
-    </div>
-  </header>
+  <Container>
+    <header className={styles.wrap}>
+      <ConditionalLink />
+      <div className={styles.content}>
+        {children}
+      </div>
+    </header>
+  </Container>
 )
 
 export default Header

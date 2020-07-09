@@ -1,0 +1,18 @@
+.wrap {
+  --bg: var(--slate);
+  --fg: var(--white);
+  background-color: var(--bg);
+  border-top: 0.25em solid var(--dark-gray);
+  color: var(--fg);
+  margin-top: 1em;
+}
+
+@media (min-width: 65em) {
+  .wrap {
+    text-align: center;
+  }
+}
+
+.yellow {
+  color: var(--yellow);
+}

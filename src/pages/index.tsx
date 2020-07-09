@@ -3,6 +3,8 @@ import { graphql } from 'gatsby'
 import Grid from '../components/grid'
 import SEO from '../components/seo'
 import Header from '../components/header'
+import Footer from '../components/footer'
+import Container from '../components/container'
 import { extractRepositories, QueryData } from '../data/github'
 
 const App = (props: { data: QueryData }) => (
@@ -14,7 +16,10 @@ const App = (props: { data: QueryData }) => (
         Wondering what you can build with <a href="https://nearprotocol.com/">NEAR</a>? Check out these examples for inspiration! You can also <a href="https://github.com/near-examples">view these examples on GitHub</a>.
       </p>
     </Header>
-    <Grid repositories={extractRepositories(props.data)} />
+    <Container>
+      <Grid repositories={extractRepositories(props.data)} />
+    </Container>
+    <Footer />
   </>
 )
 

@@ -3,6 +3,7 @@ import Markdown from 'react-markdown'
 import { graphql } from 'gatsby'
 import { RepositoryTypeRaw, shape } from '../data/github'
 import Header from '../components/header'
+import Footer from '../components/footer'
 import SEO from '../components/seo'
 import Gitpod from './gitpod'
 import GitHub from './github'
@@ -10,7 +11,6 @@ import GitHub from './github'
 // bypass typescript by using commonjs syntax:
 // https://github.com/microsoft/TypeScript-React-Starter/issues/12
 const defaultBanner = require('../images/default-banner.svg')
-const styles = require('./repository.module.css')
 
 type Props = {
   data: {
@@ -62,17 +62,18 @@ const Repository = ({ data }: Props) => {
           alignItems: 'center',
           margin: '1.5em 0'
         }}>
-          <a className={styles.button} href={`https://gitpod.io/#${repo.url}`}>
+          <a className="button" href={`https://gitpod.io/#${repo.url}`}>
             <span>Open in</span>
             <Gitpod />
           </a>
-          <a className={styles.button} href={repo.url}>
+          <a className="button" href={repo.url}>
             <span>Browse on</span>
             <GitHub />
           </a>
         </p>
         <Markdown source={readme} />
       </div>
+      <Footer />
     </>
   )
 }

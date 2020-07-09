@@ -28,7 +28,7 @@
 
 html {
   --white: #fff;
-  --slate: #25282A;
+  --slate: #24272a;
   --royal: #0072CE;
   --blue: #61D1E3;
   --red: #FF585D;
@@ -64,9 +64,7 @@ html {
 }
 
 body {
-  margin: 0 auto;
-  padding: 1em;
-  max-width: 65em;
+  margin: 0;
 }
 
 h1 {
@@ -120,4 +118,50 @@ a:hover, a:focus, a:active {
 img {
   display: block;
   max-width: 100%;
+}
+
+button,        .button,
+button:hover,  .button:hover,
+button:focus,  .button:focus,
+button:active, .button:active {
+  cursor: pointer;
+  color: var(--white);
+  text-decoration: none;
+}
+
+button, .button {
+  background-color: var(--royal);
+  border: none;
+  border-radius: 0.5em;
+  padding: 0.5em 1em;
+  font-size: 1.25em;
+  text-align: center;
+  transition: all 150ms;
+}
+
+button:hover, .button:hover,
+button:focus, .button:focus {
+  transform: translateY(-3px);
+  box-shadow: 0 3px 1px var(--fg);
+}
+
+button:active, .button:active {
+  transform: translateY(0);
+  box-shadow: none;
+  transition: all 35ms;
+}
+
+button, .button > * {
+  vertical-align: middle;
+}
+
+button, .button > *:first-child {
+  margin-right: 0.5em;
+}
+
+input {
+  font: inherit;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  border: none;
 }
