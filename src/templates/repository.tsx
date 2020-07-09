@@ -51,6 +51,7 @@ const Repository = ({ data }: Props) => {
         <h1>{title}</h1>
       </Header>
       <div style={{
+        padding: '1em',
         margin: '0 auto',
         maxWidth: '45em'
       }}>
