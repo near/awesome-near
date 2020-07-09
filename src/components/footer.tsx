@@ -15,7 +15,7 @@ export default function Footer () {
           </h3>
           <div className="flex items-center mt-10">
             <label htmlFor="email" style={{ display: 'inline-block', textIndent: '-999em' }}>Email</label>
-            <input type="email" id="email" name="EMAIL" placeholder="Your email…"/>
+            <input required type="email" id="email" name="EMAIL" placeholder="Your email…"/>
             <button type="submit">Subscribe</button>
           </div>
           <p>
