@@ -77,28 +77,28 @@ h1, h2, h3 {
   line-height: 1.1;
 }
 
-::-webkit-scrollbar {
-  -webkit-appearance: none;
-  width: 5px;
-  height: 5px;
-  -webkit-overflow-scrolling: auto;
-}
-::-webkit-scrollbar-thumb {
-  border-radius: 40px;
-  background-color: rgba(0,0,0,.1);
-  box-shadow: 0 0 1px rgba(255,255,255,.1);
-}
-@media (prefers-color-scheme: dark) {
-  ::-webkit-scrollbar-thumb {
-    background-color: rgba(255,255,255,.1);
-    box-shadow: 0 0 1px rgba(0,0,0,.1);
-  }
-}
 
 pre {
   overflow-x: scroll;
   padding: 5px 10px;
   background-color: var(--light-gray);
+}
+pre::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 5px;
+  height: 5px;
+  -webkit-overflow-scrolling: auto;
+}
+pre::-webkit-scrollbar-thumb {
+  border-radius: 40px;
+  background-color: rgba(0,0,0,.1);
+  box-shadow: 0 0 1px rgba(255,255,255,.1);
+}
+@media (prefers-color-scheme: dark) {
+  pre::-webkit-scrollbar-thumb {
+    background-color: rgba(255,255,255,.1);
+    box-shadow: 0 0 1px rgba(0,0,0,.1);
+  }
 }
 
 ::selection {
