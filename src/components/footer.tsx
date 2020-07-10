@@ -13,11 +13,16 @@ export default function Footer () {
             Subscribe via Email.
             <span className={styles.yellow}> No fluff, just what you need to know.</span>
           </h3>
-          <div className="flex items-center mt-10">
-            <label htmlFor="email" style={{ display: 'inline-block', textIndent: '-999em' }}>Email</label>
-            <input required type="email" id="email" name="EMAIL" placeholder="Your email…"/>
-            <button type="submit">Subscribe</button>
-          </div>
+          <label htmlFor="email" style={{ display: 'inline-block', textIndent: '-999em' }}>Email</label>
+          <input
+            id="email"
+            name="EMAIL"
+            placeholder="Your email…"
+            required
+            style={{ marginRight: '1em' }}
+            type="email"
+          />
+          <button type="submit">Subscribe</button>
           <p>
             <small>No spam. Never shared. Opt out at any time.</small>
           </p>
