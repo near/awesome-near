@@ -80,8 +80,15 @@ export type QueryData = {
  * - Removes the ready-to-use topic
  * - Filters repositories using URL params
  */
-export function extractRepositories (data: QueryData): RepositoryType[] {
-  return data.github.search.repositories.map(shape).filter(filter)
+export function extractRepositories (
+  data: QueryData,
+  { filtered } = { filtered: true }
+): RepositoryType[] {
+  const shaped = data.github.search.repositories.map(shape)
+
+  if (!filtered) return shaped
+
+  return shaped.filter(filter)
 }
 
 export function shape (repository: RepositoryTypeRaw): RepositoryType {

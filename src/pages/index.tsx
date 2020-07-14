@@ -7,23 +7,39 @@ import Footer from '../components/footer'
 import Container from '../components/container'
 import { extractRepositories, QueryData } from '../data/github'
 
-const App = (props: { data: QueryData }) => (
-  <>
-    <SEO />
-    <div style={{ minHeight: '100vh' }}>
-      <Header>
-        <h1 style={{ marginBottom: 0 }}>Examples</h1>
-        <p style={{ marginTop: 0 }}>
-          Wondering what you can build with <a href="https://nearprotocol.com/">NEAR</a>? Check out these examples for inspiration! You can also <a href="https://github.com/near-examples">view these examples on GitHub</a>.
-        </p>
-      </Header>
-      <Container>
-        <Grid repositories={extractRepositories(props.data)} />
-      </Container>
-    </div>
-    <Footer />
-  </>
-)
+const App = (props: { data: QueryData }) => {
+  const [repositories, setRepositories] = React.useState(
+    // first render pass must match static file or Gatsby gets confused
+    // filtering is dynamic and happens after page load
+    extractRepositories(props.data, { filtered: false })
+  )
+
+  // run effect after JS initializes to apply filter, passing empty array as
+  // second argument to ensure this only runs once
+  React.useEffect(() => {
+    setRepositories(
+      extractRepositories(props.data, { filtered: true })
+    )
+  }, [])
+
+  return (
+    <>
+      <SEO />
+      <div style={{ minHeight: '100vh' }}>
+        <Header>
+          <h1 style={{ marginBottom: 0 }}>Examples</h1>
+          <p style={{ marginTop: 0 }}>
+            Wondering what you can build with <a href="https://nearprotocol.com/">NEAR</a>? Check out these examples for inspiration! You can also <a href="https://github.com/near-examples">view these examples on GitHub</a>.
+          </p>
+        </Header>
+        <Container>
+          <Grid repositories={repositories} />
+        </Container>
+      </div>
+      <Footer />
+    </>
+  )
+}
 
 export default App
 
