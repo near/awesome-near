@@ -32,6 +32,7 @@ export type RepositoryType = {
   openGraphImageUrl: string
   usesCustomOpenGraphImage: boolean
   readme: string
+  headline: string
   topics: string[]
 }
 
@@ -88,12 +89,14 @@ export function shape (repository: RepositoryTypeRaw): RepositoryType {
   const readme = repositoryCopy.readme.text
   delete repositoryCopy.readme
 
+  const headline = readme.split('\n')[0]
+
   const topics = repositoryCopy.repositoryTopics.nodes
     .map(n => n.topic.name)
     .filter(n => n !== 'ready-to-use')
   delete repositoryCopy.repositoryTopics
 
-  return { ...repositoryCopy, readme, topics }
+  return { ...repositoryCopy, readme, topics, headline }
 }
 
 function filter (repository: RepositoryType): boolean {
@@ -117,5 +120,9 @@ function filter (repository: RepositoryType): boolean {
 
   const nameMatched = !!repository.name.toLowerCase().match(query)
 
-  return topicMatched || nameMatched
+  const descriptionMatched = !!repository.description.toLowerCase().match(query)
+
+  const headlineMatched = !!repository.headline.toLowerCase().match(query)
+
+  return topicMatched || nameMatched || descriptionMatched || headlineMatched
 }

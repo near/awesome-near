@@ -22,7 +22,7 @@ const Card = ({ repo }: CardProps) => (
     />
     <div className={styles.cardContent}>
       <h2>
-        {repo.readme.split('\n')[0]}
+        {repo.headline}
       </h2>
       <p>
         {repo.description}

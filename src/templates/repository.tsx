@@ -22,7 +22,6 @@ type Props = {
 
 const Repository = ({ data }: Props) => {
   const repo = shape(data.github.repo)
-  const title = repo.readme.split('\n')[0]
   const readme = repo.readme.replace(/[\s\S]*<!-- [^>]+ -->/, '')
   const image = repo.usesCustomOpenGraphImage
     ? repo.openGraphImageUrl
@@ -30,7 +29,7 @@ const Repository = ({ data }: Props) => {
   return (
     <>
       <SEO
-        title={'NEAR Example: ' + title}
+        title={'NEAR Example: ' + repo.headline}
         description={repo.description + ' – An example showing the sort of thing you can build with NEAR Protocol'}
         meta={[
           {
@@ -48,7 +47,7 @@ const Repository = ({ data }: Props) => {
         ]}
       />
       <Header>
-        <h1>{title}</h1>
+        <h1>{repo.headline}</h1>
       </Header>
       <div style={{
         padding: '1em',
