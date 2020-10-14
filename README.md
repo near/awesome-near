@@ -4,21 +4,21 @@
 
 ## Getting Started
 NEAR basic resources:
-* [NEAR Key Concepts](https://docs.nearprotocol.com/docs/concepts/overview)
-* [NEAR Dev Documentation](https://docs.nearprotocol.com/)
-* [NEAR Explorer](https://explorer.nearprotocol.com/)
+* [NEAR Key Concepts](https://docs.near.org/docs/concepts/overview)
+* [NEAR Dev Documentation](https://docs.near.org/)
+* [NEAR Explorer](https://explorer.near.org/)
 
 Setup a local development environment in one step:
-* [create-near-app](https://github.com/nearprotocol/create-near-app)
+* [create-near-app](https://github.com/near/create-near-app)
 
 ## Examples
 
 ### Rust Examples
 
-* [Fungible token contract](https://github.com/nearprotocol/near-sdk-rs/tree/master/examples/fungible-token)
+* [Fungible token contract](https://github.com/near/near-sdk-rs/tree/master/examples/fungible-token)
 * [Cross contract interaction](https://github.com/near-examples/rust-high-level-cross-contract)
 * [Status message posting contract](https://github.com/near-examples/rust-status-message)
-* [Send NEAR via link contract](https://github.com/nearprotocol/near-linkdrop)
+* [Send NEAR via link contract](https://github.com/near/near-linkdrop)
 
 ### AssemblyScript Examples
 Repo|Gitpod
@@ -42,9 +42,9 @@ Repo|Gitpod
 
 ### Integrations and Off-chain Services
 
-* [Wallet backend](https://github.com/nearprotocol/near-contract-helper)
-* [Explorer backend](https://github.com/nearprotocol/near-explorer/tree/master/backend)
-* [Bridge relay service](https://github.com/nearprotocol/near-bridge/tree/master/ethrelay)
+* [Wallet backend](https://github.com/near/near-contract-helper)
+* [Explorer backend](https://github.com/near/near-explorer/tree/master/backend)
+* [Bridge relay service](https://github.com/near/rainbow-bridge-lib/tree/master/near2eth-relay)
 
 ## Projects
 

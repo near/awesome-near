@@ -82,7 +82,7 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 ## 💫 Deploy
 
-We deploy this site to https://render.com/ via the configuration in https://github.com/nearprotocol/render-ops
+We deploy this site to https://render.com/ via the configuration in https://github.com/near/render-ops
 
 * Commits to the `master` branch in this repository automatically kick off a rebuild & deploy.
 * On GitHub, we [have a webhook configured](https://github.com/organizations/near-examples/settings/hooks) to hit our [Render deploy hook endpoint](https://render.com/docs/deploy-hooks) every time relevant changes are made to a repository in the `near-examples` organization. This means that every time a commit or [some other changes](https://github.com/organizations/near-examples/settings/hooks) are made to a repository at `github.com/near-examples/*`, it automatically kicks off a rebuild & deploy of this website, ensuring this website accurately reflects information in the `near-examples` org. Unfortunately, GitHub does not support webhooks for changes to repository settings, which this site also needs. So:
