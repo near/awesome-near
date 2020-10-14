@@ -4,25 +4,36 @@ Built with [Gatsby](https://www.gatsbyjs.org/), populated with public repositori
 
 ## 🚀 Quick start
 
-1.  **Install prerequisits**
+1.  **Install prerequisites**
 
-    Make sure you have node.js installed (we like [asdf](https://github.com/asdf-vm/asdf) for this), then use it to install [yarn](https://yarnpkg.com/) 
+    Make sure you have [Node.js](https://nodejs.org/en/download/package-manager/) installed, then use it to install [yarn](https://yarnpkg.com/):
 
         npm install --global yarn
 
-    Or the shorthand:
+    Clone this repository, `cd` into it, and install dependencies:
 
-        npm i -g yarn
+        yarn install
 
-2.  **Start developing.**
+2.  **Set up GitHub Token**
+
+    Go to https://github.com/settings/tokens, generate a new token
+
+    * Give it a name like "near examples local"
+    * You don't have to check any of the checkboxes
+    * Click the green "Generate token" button at the bottom
+    * Copy the value it shows you
+
+    Now create a `.env` file in the root of the project with
+
+        GITHUB_TOKEN=[the value you just copied]
+
+3.  **Start developing.**
 
     In your terminal, change into this directory and run
 
-    ```shell
-    gatsby develop
-    ```
+        yarn start
 
-3.  **Open the source code and start editing!**
+4.  **Open the source code and start editing!**
 
     Your site is now running at `http://localhost:8000`!
 
