@@ -7,18 +7,18 @@
 
 html {
   --white: #fff;
-  --slate: #24272a;
+  --black: #000;
   --royal: #0072CE;
-  --blue: #61D1E3;
+  --blue: #00C1DE;
   --red: #FF585D;
-  --green: #8FD6BD;
+  --green: #00C08B;
   --yellow: #F0EC74;
   --gray: #ddd;
   --dark-gray: #888;
-  --light-gray: #f8f8f8;
+  --light-gray: #f2f2f2;
 
   --bg: var(--white);
-  --fg: var(--slate);
+  --fg: var(--black);
   --primary: var(--royal);
   --secondary: var(--red);
   --tertiary: var(--green);
@@ -35,7 +35,7 @@ html {
 
 @media (prefers-color-scheme: dark) {
   html {
-    --bg: var(--slate);
+    --bg: var(--black);
     --fg: var(--white);
     --primary: var(--blue);
     --gray: #555;

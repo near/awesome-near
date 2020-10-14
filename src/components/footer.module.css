@@ -1,5 +1,5 @@
 .wrap {
-  --bg: var(--slate);
+  --bg: var(--black);
   --fg: var(--white);
   background-color: var(--bg);
   border-top: 0.25em solid var(--dark-gray);
