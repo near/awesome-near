@@ -1,26 +1,5 @@
-@import url('https://use.typekit.net/pqx2pko.css');
-
-@font-face {
-  font-family: BwSeidoRound;
-  src: url(../fonts/BwSeidoRound500.eot);
-  src: url(../fonts/BwSeidoRound500.eot?#iefix) format("embedded-opentype"),
-       url(../fonts/BwSeidoRound500.woff2) format("woff2"),
-       url(../fonts/BwSeidoRound500.woff) format("woff"),
-       url(../fonts/BwSeidoRound500.ttf) format("truetype");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: BwSeidoRound;
-  src: url(../fonts/BwSeidoRound900.eot);
-  src: url(../fonts/BwSeidoRound900.eot?#iefix) format("embedded-opentype"),
-       url(../fonts/BwSeidoRound900.woff2) format("woff2"),
-       url(../fonts/BwSeidoRound900.woff) format("woff"),
-       url(../fonts/BwSeidoRound900.ttf) format("truetype");
-  font-weight: 900;
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
 * {
   box-sizing: border-box;
@@ -47,8 +26,9 @@ html {
 
   background-color: var(--bg);
   color: var(--fg);
-  font-family: benton-sans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  font-family: Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
   font-size: calc(.8em + 0.3vw);
+  font-weight: 400;
   line-height: 1.5;
 }
 
@@ -72,12 +52,15 @@ h1 {
 }
 
 h1, h2, h3 {
-  font-family: BwSeidoRound,sans-serif;
-  font-weight: 500;
+  font-family: Inter,sans-serif;
+  font-weight: 900;
   line-height: 1.1;
 }
 
 
+pre, code {
+  font-family: 'Source Code Pro', monospace;
+}
 pre {
   overflow-x: scroll;
   padding: 5px 10px;
