@@ -63,5 +63,27 @@ export const plugins = [
       // siteSpeedSampleRate: 10,
       // cookieDomain: "example.com",
     }
+  },
+  {
+    resolve: 'gatsby-plugin-mixpanel',
+    options: {
+      apiToken: '7341a6471405b0f3e42f5a1f222e8048',
+      pageViews: {
+        '/guest-book': 'Guest Book project', // an event 'Page guest book view' will be send to mixpanel on every visit on the /guest-book page
+        '/NFT': ' Non-Fungible Token project',
+        '/rust-counter': ' Rust Counter project',
+        '/FT': ' Fungible Token project',
+        '/rust-status-message': 'Status Message project',
+        '/pow-faucet': 'Proof of Work Faucet project',
+        '/token-contract-as' : 'Token Contract in AssemblySecript',
+        '/wallet example': 'Wallet Example project',
+        '/counter': 'Counter project',
+        '/404': ' 404 view',
+      },
+      mixpanelConfig: null, // you can override default config for mixpanel library https://github.com/mixpanel/mixpanel-js/blob/8b2e1f7b/src/mixpanel-core.js#L87-L110
+      /*
+      pageViews: 'all' // to track every route changes
+      */
+    },
   }
 ]
