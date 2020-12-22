@@ -8,6 +8,9 @@ import SEO from '../components/seo'
 import Gitpod from './gitpod'
 import GitHub from './github'
 
+import { useMixpanel } from 'gatsby-plugin-mixpanel'
+
+
 // bypass typescript by using commonjs syntax:
 // https://github.com/microsoft/TypeScript-React-Starter/issues/12
 const defaultBanner = require('../images/default-banner.svg')
@@ -26,6 +29,11 @@ const Repository = ({ data }: Props) => {
   const image = repo.usesCustomOpenGraphImage
     ? repo.openGraphImageUrl
     : defaultBanner
+
+  // mixpanel tracking part
+  const mixpanel = useMixpanel()
+  mixpanel.track_links("a", "Link Click", {'timestamp': new Date().toString()})
+
   return (
     <>
       <SEO

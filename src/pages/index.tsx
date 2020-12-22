@@ -6,6 +6,7 @@ import Header from '../components/header'
 import Footer from '../components/footer'
 import Container from '../components/container'
 import { extractRepositories, QueryData } from '../data/github'
+import { useMixpanel } from 'gatsby-plugin-mixpanel'
 
 const App = (props: { data: QueryData }) => {
   const [repositories, setRepositories] = React.useState(
@@ -21,6 +22,14 @@ const App = (props: { data: QueryData }) => {
       extractRepositories(props.data, { filtered: true })
     )
   }, [])
+
+  // mixpanel setting part
+  const mixpanel = useMixpanel()
+  mixpanel.register({'timestamp': new Date().toString()})
+  mixpanel.track('Viewed Page')
+  mixpanel.time_event('Viewed Page');
+
+  mixpanel.track_links("a", "Link Click", {'timestamp': new Date().toString()})
 
   return (
     <>
