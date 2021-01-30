@@ -15,21 +15,28 @@ const App = (props: { data: QueryData }) => {
     extractRepositories(props.data, { filtered: false })
   )
 
+  const mixpanel = useMixpanel()
+
   // run effect after JS initializes to apply filter, passing empty array as
   // second argument to ensure this only runs once
   React.useEffect(() => {
     setRepositories(
       extractRepositories(props.data, { filtered: true })
     )
+    // mixpanel setting part
+    mixpanel.register({'timestamp': new Date().toString()})
+    mixpanel.track('Viewed Page')
+    mixpanel.time_event('Viewed Page');
+
+    mixpanel.track_links("a", "Link Click", {'timestamp': new Date().toString()})
+
+    let id = mixpanel.get_distinct_id()
+    mixpanel.identify(id)
+    mixpanel.people.set({"Subscribed email": false, "Gitpod clicked amount": 0, "Github clicked amount": 0})
+    mixpanel.people.set_once("First time touch examples", new Date().toString() )
   }, [])
 
-  // mixpanel setting part
-  const mixpanel = useMixpanel()
-  mixpanel.register({'timestamp': new Date().toString()})
-  mixpanel.track('Viewed Page')
-  mixpanel.time_event('Viewed Page');
 
-  mixpanel.track_links("a", "Link Click", {'timestamp': new Date().toString()})
 
   return (
     <>

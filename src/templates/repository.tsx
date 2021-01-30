@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Markdown from 'react-markdown'
 import { graphql } from 'gatsby'
 import { RepositoryTypeRaw, shape } from '../data/github'
@@ -32,7 +32,20 @@ const Repository = ({ data }: Props) => {
 
   // mixpanel tracking part
   const mixpanel = useMixpanel()
-  mixpanel.track_links("a", "Link Click", {'timestamp': new Date().toString()})
+
+  const trackGitpod = () => {
+    mixpanel.people.increment("Gitpod clicked amount")
+    mixpanel.track("Click Gitpod button")
+  }
+
+  const trackGithub = () => {
+    mixpanel.people.increment("Github clicked amount")
+    mixpanel.track("Click Github button")
+  }
+
+  useEffect(
+    () => mixpanel.track_links("a", "Link Click", {'timestamp': new Date().toString()})
+  , [])
 
   return (
     <>
@@ -70,11 +83,11 @@ const Repository = ({ data }: Props) => {
           alignItems: 'center',
           margin: '1.5em 0'
         }}>
-          <a className="button" href={`https://gitpod.io/#${repo.url}`}>
+          <a className="button" href={`https://gitpod.io/#${repo.url}`} onClick={trackGitpod}>
             <span>Open in</span>
             <Gitpod />
           </a>
-          <a className="button" href={repo.url}>
+          <a className="button" href={repo.url} onClick={trackGithub}>
             <span>Browse on</span>
             <GitHub />
           </a>
