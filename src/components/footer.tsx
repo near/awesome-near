@@ -1,6 +1,7 @@
 import React from 'react'
 import Container from './container'
 import { useMixpanel } from 'gatsby-plugin-mixpanel'
+import { SUBSCRIBED } from '../components/consts'
 
 // use require to avoid typescript complaints
 const styles = require('./footer.module.css')
@@ -10,13 +11,13 @@ export default function Footer () {
   const trackHandler = () => {
     let id = mixpanel.get_distinct_id()
     mixpanel.identify(id)
-    mixpanel.people.set("Subscribed email", true)
-    mixpanel.track("Subscribed with email")
+    mixpanel.people.set(SUBSCRIBED, true)
+    mixpanel.track(SUBSCRIBED)
   }
   return (
     <footer className={styles.wrap}>
       <Container>
-        <form action="https://42labs.us14.list-manage.com/subscribe/post?u=faedf5dec8739fb92e05b4131&amp;id=14e8024c6c" method="POST" target="_blank" onSubmit={trackHandler}>
+        <form action="https://42labs.us14.list-manage.com/subscribe/post?u=faedf5dec8739fb92e05b4131&amp;id=14e8024c6c" method="POST" target="_blank">
           <h3>
             Subscribe via Email.
             <span className={styles.yellow}> No fluff, just what you need to know.</span>
@@ -30,7 +31,7 @@ export default function Footer () {
             style={{ marginRight: '1em' }}
             type="email"
           />
-          <button type="submit">Subscribe</button>
+          <button type="submit" onClick={trackHandler}>Subscribe</button>
           <p>
             <small>No spam. Never shared. Opt out at any time.</small>
           </p>

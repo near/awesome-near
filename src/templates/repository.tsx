@@ -9,6 +9,7 @@ import Gitpod from './gitpod'
 import GitHub from './github'
 
 import { useMixpanel } from 'gatsby-plugin-mixpanel'
+import { GITHUB_CLICKS, GITPOD_CLICKS } from '../components/consts'
 
 
 // bypass typescript by using commonjs syntax:
@@ -34,12 +35,12 @@ const Repository = ({ data }: Props) => {
   const mixpanel = useMixpanel()
 
   const trackGitpod = () => {
-    mixpanel.people.increment("Gitpod clicked amount")
+    mixpanel.people.increment(GITPOD_CLICKS)
     mixpanel.track("Click Gitpod button")
   }
 
   const trackGithub = () => {
-    mixpanel.people.increment("Github clicked amount")
+    mixpanel.people.increment(GITHUB_CLICKS)
     mixpanel.track("Click Github button")
   }
 
