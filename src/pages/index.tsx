@@ -34,9 +34,9 @@ const App = (props: { data: QueryData }) => {
     let id = mixpanel.get_distinct_id()
     mixpanel.identify(id)
     mixpanel.people.set({
-      SUBSCRIBED: false, 
-      GITPOD_CLICKS: 0, 
-      GITHUB_CLICKS: 0})
+      [SUBSCRIBED]: false, 
+      [GITPOD_CLICKS]: 0, 
+      [GITHUB_CLICKS]: 0})
     mixpanel.people.set_once("First time touch examples", new Date().toString() )
   }, [])
 
