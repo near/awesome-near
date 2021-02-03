@@ -1,10 +1,19 @@
 import React from 'react'
 import Container from './container'
+import { useMixpanel } from 'gatsby-plugin-mixpanel'
+import { SUBSCRIBED } from '../mixpanel'
 
 // use require to avoid typescript complaints
 const styles = require('./footer.module.css')
 
 export default function Footer () {
+  const mixpanel = useMixpanel()
+  const trackHandler = () => {
+    let id = mixpanel.get_distinct_id()
+    mixpanel.identify(id)
+    mixpanel.people.set(SUBSCRIBED, true)
+    mixpanel.track(SUBSCRIBED)
+  }
   return (
     <footer className={styles.wrap}>
       <Container>
@@ -22,7 +31,7 @@ export default function Footer () {
             style={{ marginRight: '1em' }}
             type="email"
           />
-          <button type="submit">Subscribe</button>
+          <button type="submit" onClick={trackHandler}>Subscribe</button>
           <p>
             <small>No spam. Never shared. Opt out at any time.</small>
           </p>

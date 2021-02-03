@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Markdown from 'react-markdown'
 import { graphql } from 'gatsby'
 import { RepositoryTypeRaw, shape } from '../data/github'
@@ -7,6 +7,10 @@ import Footer from '../components/footer'
 import SEO from '../components/seo'
 import Gitpod from './gitpod'
 import GitHub from './github'
+
+import { useMixpanel } from 'gatsby-plugin-mixpanel'
+import { GITHUB_CLICKS, GITPOD_CLICKS } from '../mixpanel'
+
 
 // bypass typescript by using commonjs syntax:
 // https://github.com/microsoft/TypeScript-React-Starter/issues/12
@@ -26,6 +30,24 @@ const Repository = ({ data }: Props) => {
   const image = repo.usesCustomOpenGraphImage
     ? repo.openGraphImageUrl
     : defaultBanner
+
+  // mixpanel tracking part
+  const mixpanel = useMixpanel()
+
+  const trackGitpod = () => {
+    mixpanel.people.increment(GITPOD_CLICKS)
+    mixpanel.track("Click Gitpod button")
+  }
+
+  const trackGithub = () => {
+    mixpanel.people.increment(GITHUB_CLICKS)
+    mixpanel.track("Click Github button")
+  }
+
+  useEffect(
+    () => mixpanel.track_links("a", "Link Click", {'timestamp': new Date().toString()})
+  , [])
+
   return (
     <>
       <SEO
@@ -62,11 +84,11 @@ const Repository = ({ data }: Props) => {
           alignItems: 'center',
           margin: '1.5em 0'
         }}>
-          <a className="button" href={`https://gitpod.io/#${repo.url}`}>
+          <a className="button" href={`https://gitpod.io/#${repo.url}`} onClick={trackGitpod}>
             <span>Open in</span>
             <Gitpod />
           </a>
-          <a className="button" href={repo.url}>
+          <a className="button" href={repo.url} onClick={trackGithub}>
             <span>Browse on</span>
             <GitHub />
           </a>

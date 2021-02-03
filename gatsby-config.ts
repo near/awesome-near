@@ -63,5 +63,13 @@ export const plugins = [
       // siteSpeedSampleRate: 10,
       // cookieDomain: "example.com",
     }
+  },
+  {
+    resolve: 'gatsby-plugin-mixpanel',
+    options: {
+      apiToken: '7341a6471405b0f3e42f5a1f222e8048',
+      pageViews: 'all',
+      mixpanelConfig: null, // you can override default config for mixpanel library https://github.com/mixpanel/mixpanel-js/blob/8b2e1f7b/src/mixpanel-core.js#L87-L110
+    },
   }
 ]

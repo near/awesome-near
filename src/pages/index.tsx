@@ -6,6 +6,8 @@ import Header from '../components/header'
 import Footer from '../components/footer'
 import Container from '../components/container'
 import { extractRepositories, QueryData } from '../data/github'
+import { useMixpanel } from 'gatsby-plugin-mixpanel'
+import { SUBSCRIBED, GITHUB_CLICKS, GITPOD_CLICKS } from '../mixpanel'
 
 const App = (props: { data: QueryData }) => {
   const [repositories, setRepositories] = React.useState(
@@ -14,13 +16,31 @@ const App = (props: { data: QueryData }) => {
     extractRepositories(props.data, { filtered: false })
   )
 
+  const mixpanel = useMixpanel()
+
   // run effect after JS initializes to apply filter, passing empty array as
   // second argument to ensure this only runs once
   React.useEffect(() => {
     setRepositories(
       extractRepositories(props.data, { filtered: true })
     )
+    // mixpanel setting part
+    mixpanel.register({'timestamp': new Date().toString()})
+    mixpanel.track('Viewed Page')
+    mixpanel.time_event('Viewed Page');
+
+    mixpanel.track_links("a", "Link Click", {'timestamp': new Date().toString()})
+
+    let id = mixpanel.get_distinct_id()
+    mixpanel.identify(id)
+    mixpanel.people.set({
+      SUBSCRIBED: false, 
+      GITPOD_CLICKS: 0, 
+      GITHUB_CLICKS: 0})
+    mixpanel.people.set_once("First time touch examples", new Date().toString() )
   }, [])
+
+
 
   return (
     <>
