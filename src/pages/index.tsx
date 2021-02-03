@@ -7,7 +7,7 @@ import Footer from '../components/footer'
 import Container from '../components/container'
 import { extractRepositories, QueryData } from '../data/github'
 import { useMixpanel } from 'gatsby-plugin-mixpanel'
-import { SUBSCRIBED, GITHUB_CLICKS, GITPOD_CLICKS } from '../components/consts'
+import { SUBSCRIBED, GITHUB_CLICKS, GITPOD_CLICKS } from '../mixpanel'
 
 const App = (props: { data: QueryData }) => {
   const [repositories, setRepositories] = React.useState(

@@ -1,7 +1,7 @@
 import React from 'react'
 import Container from './container'
 import { useMixpanel } from 'gatsby-plugin-mixpanel'
-import { SUBSCRIBED } from '../components/consts'
+import { SUBSCRIBED } from '../mixpanel'
 
 // use require to avoid typescript complaints
 const styles = require('./footer.module.css')

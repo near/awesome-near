@@ -9,7 +9,7 @@ import Gitpod from './gitpod'
 import GitHub from './github'
 
 import { useMixpanel } from 'gatsby-plugin-mixpanel'
-import { GITHUB_CLICKS, GITPOD_CLICKS } from '../components/consts'
+import { GITHUB_CLICKS, GITPOD_CLICKS } from '../mixpanel'
 
 
 // bypass typescript by using commonjs syntax:
