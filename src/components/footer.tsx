@@ -11,7 +11,7 @@ export default function Footer () {
   const trackHandler = () => {
     let id = mixpanel.get_distinct_id()
     mixpanel.identify(id)
-    mixpanel.people.set(SUBSCRIBED, true)
+    mixpanel.people.set([SUBSCRIBED], true)
     mixpanel.track(SUBSCRIBED)
   }
   return (
