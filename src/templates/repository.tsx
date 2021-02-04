@@ -33,7 +33,9 @@ const Repository = ({ data }: Props) => {
 
   // mixpanel tracking part
   const mixpanel = useMixpanel()
-
+  let id = mixpanel.get_distinct_id()
+  mixpanel.identify(id)
+  
   const trackGitpod = () => {
     mixpanel.people.increment([GITPOD_CLICKS])
     mixpanel.track("Click Gitpod button")
