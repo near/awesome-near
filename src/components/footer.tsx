@@ -9,7 +9,7 @@ const styles = require('./footer.module.css')
 export default function Footer () {
   const mixpanel = useMixpanel()
   const trackHandler = () => {
-    let id = mixpanel.get_distinct_id()
+    const id = mixpanel.get_distinct_id()
     mixpanel.identify(id)
     mixpanel.people.set([SUBSCRIBED], true)
     mixpanel.track(SUBSCRIBED)

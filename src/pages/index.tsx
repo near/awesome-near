@@ -31,7 +31,7 @@ const App = (props: { data: QueryData }) => {
 
     mixpanel.track_links("a", "Link Click", {'timestamp': new Date().toString()})
 
-    let id = mixpanel.get_distinct_id()
+    const id = mixpanel.get_distinct_id()
     mixpanel.identify(id)
     mixpanel.people.set({
       [SUBSCRIBED]: false, 

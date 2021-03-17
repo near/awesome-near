@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import Markdown from 'react-markdown'
 import { graphql } from 'gatsby'
 import { RepositoryTypeRaw, shape } from '../data/github'
@@ -33,8 +33,6 @@ const Repository = ({ data }: Props) => {
 
   // mixpanel tracking part
   const mixpanel = useMixpanel()
-  let id = mixpanel.get_distinct_id()
-  mixpanel.identify(id)
   
   const trackGitpod = () => {
     mixpanel.people.increment([GITPOD_CLICKS])
@@ -46,8 +44,12 @@ const Repository = ({ data }: Props) => {
     mixpanel.track("Click Github button")
   }
 
-  useEffect(
-    () => mixpanel.track_links("a", "Link Click", {'timestamp': new Date().toString()})
+  React.useEffect(
+    () => {
+      const id = mixpanel.get_distinct_id()
+      mixpanel.identify(id)
+      mixpanel.track_links("a", "Link Click", {'timestamp': new Date().toString()})
+    }
   , [])
 
   return (
