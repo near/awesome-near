@@ -48,7 +48,7 @@ const Repository = ({ data }: Props) => {
     () => {
       const id = mixpanel.get_distinct_id()
       mixpanel.identify(id)
-      mixpanel.track_links("a", "Link Click", {'timestamp': new Date().toString()})
+      mixpanel.track_links("a", "Link Click Examples", {'timestamp': new Date().toString()})
     }
   , [])
 

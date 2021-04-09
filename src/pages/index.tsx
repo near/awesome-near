@@ -26,10 +26,8 @@ const App = (props: { data: QueryData }) => {
     )
     // mixpanel setting part
     mixpanel.register({'timestamp': new Date().toString()})
-    mixpanel.track('Viewed Page')
-    mixpanel.time_event('Viewed Page');
 
-    mixpanel.track_links("a", "Link Click", {'timestamp': new Date().toString()})
+    mixpanel.track_links("a", "Link Click Examples", {'timestamp': new Date().toString()})
 
     const id = mixpanel.get_distinct_id()
     mixpanel.identify(id)
