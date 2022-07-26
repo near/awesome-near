@@ -4,7 +4,7 @@
 
 ## Getting Started
 NEAR basic resources:
-* [NEAR Key Concepts](https://docs.near.org/docs/concepts/new-to-near)
+* [NEAR Key Concepts](https://docs.near.org/concepts/welcome)
 * [NEAR Dev Documentation](https://docs.near.org/)
 * [NEAR Explorer](https://explorer.near.org/)
 
