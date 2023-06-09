@@ -34,7 +34,7 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-standard": "^4.0.1",
-    "gatsby": "^2.19.43",
+    "gatsby": "^4.25.7",
     "gatsby-cli": "^2.11.3",
     "gatsby-plugin-manifest": "^2.2.48",
     "gatsby-plugin-react-helmet": "^3.1.24",
