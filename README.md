@@ -27,7 +27,7 @@ A curated collection of repositories and tools for building on the NEAR Protocol
 
 ---
 
-## Official SDKs
+## NEAR Protocol SDKs
 
 ### JavaScript / TypeScript
 
@@ -42,12 +42,13 @@ A curated collection of repositories and tools for building on the NEAR Protocol
 
 | Package | Description |
 |---------|-------------|
-| [near-api-rs](https://github.com/near/near-api-rs) | High-level Rust off-chain client library for NEAR blockchain interactions with builder patterns |
+| [near-api-rs](https://github.com/near/near-api-rs) | High-level Rust off-chain client library for NEAR Protocol to get accounts, block, transactions, FT/NFT tokens information, and prepare & submit transactions, function calls |
 | [near-openapi-client-rs](https://github.com/PolyProgrammist/near-openapi-client) | Auto-generated Rust JSON-RPC client for NEAR Protocol |
 | [near-jsonrpc-client-rs](https://github.com/near/near-jsonrpc-client-rs) | Rust JSON-RPC client for NEAR Protocol (legacy) |
 | [near-sdk-rs](https://github.com/near/near-sdk-rs) | Rust library for writing NEAR smart contracts |
 | [nesdie](https://github.com/austinabell/nesdie/) | Rust no-std library for writing NEAR smart contracts |
 | [near-abi-rs](https://github.com/near/near-abi-rs) | NEAR smart contract ABI primitives and models for Rust |
+
 
 ### Python
 
@@ -68,6 +69,25 @@ A curated collection of repositories and tools for building on the NEAR Protocol
 | Package | Description |
 |---------|-------------|
 | [near-jsonrpc-client-kotlin](https://github.com/near/near-jsonrpc-client-kotlin) | Type-safe Kotlin Multiplatform client for NEAR JSON-RPC API with coroutines |
+
+### Go
+
+| Package | Description |
+|---------|-------------|
+| [near-sdk-go](https://github.com/vlmoon99/near-sdk-go) | Go library for writing NEAR smart contracts (experimental) |
+| [near-api-go](https://github.com/aurora-is-near/near-api-go) | High-level Go off-chain client library for NEAR Protocol to get accounts, block, transactions, FT/NFT tokens information, and prepare & submit transactions, function calls |
+
+### C# (.NET)
+
+| Package | Description |
+|---------|-------------|
+| [near-sdk-c-sharp](https://github.com/vlmoon99/near-sdk-c-sharp) | Proof-of-concept C# library for writing NEAR smart contracts |
+
+### Elixir
+
+| Package | Description |
+|---------|-------------|
+| [near-sdk-elixir](https://github.com/vlmoon99/near-sdk-elixir) | Proof-of-concept Elixir library for writing NEAR smart contracts |
 
 ---
 
@@ -117,6 +137,7 @@ A curated collection of repositories and tools for building on the NEAR Protocol
 | [NEAR Playground](https://nearplay.app/) | Online IDE for NEAR smart contracts: From zero to deployed NEAR contract in 30 seconds. No downloads. No config. Just ship. |
 | [every-plugin](https://github.com/near-everything/every-plugin) | Composable, type-safe plugin runtime framework for remote plugin loading |
 | [near-sdk-rs-template](https://github.com/near/cargo-near-new-project-template) | GitHub Workspaces template for instant online IDE launch |
+| [near-fast-ft-transfer](https://github.com/NEAR-DevHub/NEAR-fast-ft-transfer) | High-performance REST API service for batching and distributing NEAR Protocol fungible tokens (FT) |
 
 ---
 
@@ -128,6 +149,7 @@ A curated collection of repositories and tools for building on the NEAR Protocol
 | [Stream NEAR](https://stream.near.tools) | Server-Sent Events (SSE) stream for real-time NEAR block data |
 | [Explorer API](https://github.com/fastnear/explorer-api) | Transaction-based explorer API for account transfers and block history |
 | [QueryAPI](https://github.com/near/query-api) | NEAR Lake data indexing service for querying blockchain data |
+| [Outlayer](https://outlayer.fastnear.com/) | Run any code with cryptographic proof that exactly the code you specified ran with the inputs you provided |
 
 ---
 
@@ -169,6 +191,12 @@ A curated collection of repositories and tools for building on the NEAR Protocol
 - [NEAR Intens Documentation](https://docs.near-intents.org)
 - [NEP Specifications](https://github.com/near/NEPs)
 - [NEAR Blog](https://near.org/blog)
+
+## Advanced Projects to Learn From
+
+- [core-contracts](https://github.com/near/core-contracts) - collection of the early core NEAR Protocol contracts that are still widely used (the SDKs are outdated, but the concepts are still relevant)
+- [omni-bridge](https://github.com/Near-One/omni-bridge) - one of the most advanced collection of NEAR Protocol smart contracts
+- [sputnik-dao](https://github.com/near-daos/sputnik-dao-contract) - DAO contract implementation for NEAR Protocol
 
 ---
 
