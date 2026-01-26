@@ -33,16 +33,20 @@ A curated collection of repositories and tools for building on the NEAR Protocol
 
 | Package | Description |
 |---------|-------------|
-| [near-api-js](https://github.com/near/near-api-js) | Complete JavaScript library for NEAR Protocol RPC interactions, transactions, tokens, and wallet integration |
-| [near-api-ts](https://github.com/near/near-api-ts) | High-performance TypeScript SDK for NEAR Protocol with type-safe API |
-| [near-kit](https://github.com/r-near/near-kit) | Modern TypeScript SDK with intuitive fetch-like API for NEAR interactions |
+| [near-api-js](https://github.com/near/near-api-js) | High-level JavaScript off-chain client for NEAR Protocol to get accounts, block, transactions, FT/NFT tokens information, and prepare & submit transactions, function calls |
+| [near-api-ts](https://github.com/near/near-api-ts) | High-level TypeScript off-chain client for NEAR Protocol with type-safe API to get accounts, block, transactions, FT/NFT tokens information, and prepare & submit transactions, function calls |
+| [near-kit](https://github.com/r-near/near-kit) | Modern TypeScript High-level TypeScript off-chain client with intuitive fetch-like API for NEAR Protocol to get accounts, block, transactions, FT/NFT tokens information, and prepare & submit transactions, function calls |
+| [near-jsonrpc-client-ts](https://github.com/near/near-jsonrpc-client-ts) | Auto-generated TypeScript JSON-RPC client for NEAR Protocol (used under the hood by near-api-js, near-api-ts, near-kit) |
 
 ### Rust
 
 | Package | Description |
 |---------|-------------|
-| [near-api-rs](https://github.com/near/near-api-rs) | Rust client library for NEAR blockchain interactions with builder patterns |
-| [near-sdk-rs](https://github.com/near/near-sdk-rs) | Rust library for writing NEAR smart contracts with macros and async support |
+| [near-api-rs](https://github.com/near/near-api-rs) | High-level Rust off-chain client library for NEAR blockchain interactions with builder patterns |
+| [near-openapi-client-rs](https://github.com/PolyProgrammist/near-openapi-client) | Auto-generated Rust JSON-RPC client for NEAR Protocol |
+| [near-jsonrpc-client-rs](https://github.com/near/near-jsonrpc-client-rs) | Rust JSON-RPC client for NEAR Protocol (legacy) |
+| [near-sdk-rs](https://github.com/near/near-sdk-rs) | Rust library for writing NEAR smart contracts |
+| [nesdie](https://github.com/austinabell/nesdie/) | Rust no-std library for writing NEAR smart contracts |
 | [near-abi-rs](https://github.com/near/near-abi-rs) | NEAR smart contract ABI primitives and models for Rust |
 
 ### Python
@@ -51,12 +55,13 @@ A curated collection of repositories and tools for building on the NEAR Protocol
 |---------|-------------|
 | [py-near](https://github.com/pvolnov/py-near) | Async Python client with HOT Protocol and NEAR Intents support |
 | [near-jsonrpc-client-py](https://github.com/near/near-jsonrpc-client-py) | Type-safe, Pythonic JSON-RPC client for NEAR Protocol with Pydantic models |
+| [near-sdk-py](https://github.com/r-near/near-sdk-py)| Python library for writing NEAR smart contracts (great for onboarding Python devs to blockchain, but not recommended for production) |
 
 ### Swift
 
 | Package | Description |
 |---------|-------------|
-| [near-jsonrpc-client-swift](https://github.com/space-rock/near-jsonrpc-swift) | Type-safe, high-performance Swift JSON-RPC client with async/await support |
+| [near-jsonrpc-client-swift](https://github.com/space-rock/near-jsonrpc-swift) | Type-safe Swift JSON-RPC client with async/await support |
 
 ### Kotlin
 
@@ -99,6 +104,8 @@ A curated collection of repositories and tools for building on the NEAR Protocol
 | [near-cli-rs](https://github.com/near/near-cli-rs) | Human-friendly interactive CLI for NEAR Protocol interactions |
 | [create-near-app](https://github.com/near/create-near-app) | Scaffold NEAR dApps with frontend and contract templates |
 | [cargo-near](https://github.com/near/cargo-near) | Cargo extension for building and deploying Rust smart contracts with ABI generation |
+| [near-validator-cli-rs](https://github.com/near/near-validator-cli-rs) | Human-friendly companion that helps to manage native NEAR stake and troubleshoot NEAR network |
+| [bos-cli-rs](https://github.com/bos-cli-rs/bos-cli-rs) | CLI that simplifies local component development for NEAR BOS |
 
 ---
 
@@ -107,8 +114,9 @@ A curated collection of repositories and tools for building on the NEAR Protocol
 | Package | Description |
 |---------|-------------|
 | [near-ai-chat](https://github.com/jlwaugh/near-ai-chat) | AI chat agent starter kit for NEAR AI Cloud with verifiably private inference |
+| [NEAR Playground](https://nearplay.app/) | Online IDE for NEAR smart contracts: From zero to deployed NEAR contract in 30 seconds. No downloads. No config. Just ship. |
 | [every-plugin](https://github.com/near-everything/every-plugin) | Composable, type-safe plugin runtime framework for remote plugin loading |
-| [near-sdk-rs-template](https://github.com/near/cargo-near-new-project-template) | Rust smart contract template generated by `cargo near new` |
+| [near-sdk-rs-template](https://github.com/near/cargo-near-new-project-template) | GitHub Workspaces template for instant online IDE launch |
 
 ---
 
