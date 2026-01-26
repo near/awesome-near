@@ -1,55 +1,167 @@
-# Awesome NEAR
+# Awesome NEAR Ecosystem
 
-> Curated list of resources: examples, libraries, projects.
+A curated collection of repositories and tools for building on the NEAR Protocol blockchain.
 
-## Getting Started
-NEAR basic resources:
-* [NEAR Key Concepts](https://docs.near.org/concepts/welcome)
-* [NEAR Dev Documentation](https://docs.near.org/)
-* [NEAR Explorer](https://explorer.near.org/)
+## Contents
 
-Setup a local development environment in one step:
-* [create-near-app](https://github.com/near/create-near-app)
+- [Skills](#skills)
+- [Official SDKs](#official-sdks)
+- [Wallet and Authentication](#wallet-and-authentication)
+- [CLI Tools](#cli-tools)
+- [Starter Templates](#starter-templates)
+- [Data Infrastructure](#data-infrastructure)
+- [AI and Cloud Services](#ai-and-cloud-services)
+- [Near Intents](#near-intents)
+- [Shade Agent](#shade-agent)
+- [Chain Signatures](#chain-signatures)
+- [Explorers](#explores)
+- [Additional Resources](#additional-resources)
 
-## Examples
+---
 
-### Rust Examples
+## Skills
 
-* [Fungible token contract](https://github.com/near/near-sdk-rs/tree/master/examples/fungible-token)
-* [Cross contract interaction](https://github.com/near-examples/rust-high-level-cross-contract)
-* [Status message posting contract](https://github.com/near-examples/rust-status-message)
-* [Send NEAR via link contract](https://github.com/near/near-linkdrop)
+| Package | Description |
+|---------|-------------|
+| [near-skills](https://github.com/NEARBuilders/near-skills) | AI agent skills for NEAR Protocol blockchain development |
 
-### AssemblyScript Examples
-Repo|Gitpod
----|---
-[Token Contract](https://github.com/near-examples/token-contract-as)| [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/near-examples/token-contract-as)
-[Counter](https://github.com/near-examples/counter)| [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/near-examples/counter)
-[Guest Book](https://github.com/near-examples/guest-book) | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/near-examples/guest-book)
-[Wallet Example](https://github.com/near-examples/wallet-example)| [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/near-examples/wallet-example)
-[Crypto Corgis](https://github.com/nearprotocol/corgis) | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/nearprotocol/corgis) |
-[Chess](https://github.com/nearprotocol/near-chess)|[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/nearprotocol/near-chess)
-[Chat](https://github.com/near-examples/chat) | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/near-examples/chat)
+---
 
-### Rust Examples
-Repo|Gitpod
----|---
-[Status Message](https://github.com/near-examples/rust-status-message)| [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/near-examples/rust-status-message)
-[Fungible Token Contract](https://github.com/near-examples/rust-fungible-token)| [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/near-examples/rust-fungible-token)
-[Proof of Work Faucet](https://github.com/near-examples/pow-faucet)| [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/near-examples/pow-faucet)
-[Proof of Work Transfer Faucet](https://github.com/near-examples/token-printer)| [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/near-examples/token-printer)
-[High-level cross contract calls](https://github.com/near-examples/rust-high-level-cross-contract)| [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/near-examples/rust-high-level-cross-contract)
+## Official SDKs
 
-### Integrations and Off-chain Services
+### JavaScript / TypeScript
 
-* [Wallet backend](https://github.com/near/near-contract-helper)
-* [Explorer backend](https://github.com/near/near-explorer/tree/master/backend)
-* [Bridge relay service](https://github.com/near/rainbow-bridge-lib/tree/master/near2eth-relay)
+| Package | Description |
+|---------|-------------|
+| [near-api-js](https://github.com/near/near-api-js) | Complete JavaScript library for NEAR Protocol RPC interactions, transactions, tokens, and wallet integration |
+| [near-api-ts](https://github.com/near/near-api-ts) | High-performance TypeScript SDK for NEAR Protocol with type-safe API |
+| [near-kit](https://github.com/r-near/near-kit) | Modern TypeScript SDK with intuitive fetch-like API for NEAR interactions |
 
-## Projects
+### Rust
 
-Projects that are actively building on NEAR:
-* [Flux](http://flux.market/)
-* [Snark Art](http://snark.art/)
-* [Zod](https://www.zod.tv/)
-* [ARterra](http://arterra.co/)
+| Package | Description |
+|---------|-------------|
+| [near-api-rs](https://github.com/near/near-api-rs) | Rust client library for NEAR blockchain interactions with builder patterns |
+| [near-sdk-rs](https://github.com/near/near-sdk-rs) | Rust library for writing NEAR smart contracts with macros and async support |
+| [near-abi-rs](https://github.com/near/near-abi-rs) | NEAR smart contract ABI primitives and models for Rust |
+
+### Python
+
+| Package | Description |
+|---------|-------------|
+| [py-near](https://github.com/pvolnov/py-near) | Async Python client with HOT Protocol and NEAR Intents support |
+| [near-jsonrpc-client-py](https://github.com/near/near-jsonrpc-client-py) | Type-safe, Pythonic JSON-RPC client for NEAR Protocol with Pydantic models |
+
+### Swift
+
+| Package | Description |
+|---------|-------------|
+| [near-jsonrpc-client-swift](https://github.com/space-rock/near-jsonrpc-swift) | Type-safe, high-performance Swift JSON-RPC client with async/await support |
+
+### Kotlin
+
+| Package | Description |
+|---------|-------------|
+| [near-jsonrpc-client-kotlin](https://github.com/near/near-jsonrpc-client-kotlin) | Type-safe Kotlin Multiplatform client for NEAR JSON-RPC API with coroutines |
+
+---
+
+## Wallet and Authentication
+
+| Package | Description |
+|---------|-------------|
+| [@hot-labs/near-connect](https://github.com/azbang/near-connect) | Secure, lightweight wallet connector with sandboxed execution environment |
+| [near-connect-hooks](https://github.com/matiasbenary/near-connect-hooks) | React hooks for NEAR wallet integration using @hot-labs/near-connect |
+| [near-sign-verify](https://github.com/elliotBraem/near-sign-verify) | Create and validate NEP-413 signed messages for API authentication |
+| [better-near-auth](https://github.com/elliotBraem/better-near-auth) | Sign in with NEAR (SIWN) plugin for Better Auth framework |
+
+---
+
+## Near Intents
+
+| Package | Description |
+|---------|-------------|
+| [One Click SDK TypeScript](https://github.com/defuse-protocol/one-click-sdk-typescript) | TypeScript SDK for seamless cross-chain token swaps via 1Click API |
+| [One Click SDK Rust](https://github.com/defuse-protocol/one-click-sdk-rs) | Rust API client for One-Click cross-chain swaps |
+| [One Click SDK Go](https://github.com/defuse-protocol/one-click-sdk-go) | Go API client for One-Click cross-chain swaps |
+| [Near Intents AMM Solver](https://github.com/defuse-protocol/near-intents-amm-solver) | Sample Automated Market Maker (AMM) solver for NEAR Intents protocol |
+| [contract-types](https://github.com/defuse-protocol/sdk-monorepo/tree/main/packages/contract-types) | TypeScript type definitions for Defuse Protocol contracts |
+| [crosschain-assetid](https://github.com/defuse-protocol/sdk-monorepo/tree/main/packages/crosschain-assetid) | Cross-chain asset ID utilities for multi-chain token identification |
+| [intents-sdk](https://github.com/defuse-protocol/sdk-monorepo/tree/main/packages/intents-sdk) | SDK for building intents-based applications on NEAR Intents protocol |
+| [internal-utils](https://github.com/defuse-protocol/sdk-monorepo/tree/main/packages/internal-utils) | Internal utilities for Defuse SDK packages |
+
+---
+
+## CLI Tools
+
+| Package | Description |
+|---------|-------------|
+| [near-cli-rs](https://github.com/near/near-cli-rs) | Human-friendly interactive CLI for NEAR Protocol interactions |
+| [create-near-app](https://github.com/near/create-near-app) | Scaffold NEAR dApps with frontend and contract templates |
+| [cargo-near](https://github.com/near/cargo-near) | Cargo extension for building and deploying Rust smart contracts with ABI generation |
+
+---
+
+## Starter Templates
+
+| Package | Description |
+|---------|-------------|
+| [near-ai-chat](https://github.com/jlwaugh/near-ai-chat) | AI chat agent starter kit for NEAR AI Cloud with verifiably private inference |
+| [every-plugin](https://github.com/near-everything/every-plugin) | Composable, type-safe plugin runtime framework for remote plugin loading |
+| [near-sdk-rs-template](https://github.com/near/cargo-near-new-project-template) | Rust smart contract template generated by `cargo near new` |
+
+---
+
+## Data Infrastructure
+
+| Package | Description |
+|---------|-------------|
+| [Goldsky](https://goldsky.com/chains/near) | NEAR Protocol data infrastructure and indexing service |
+| [Stream NEAR](https://stream.near.tools) | Server-Sent Events (SSE) stream for real-time NEAR block data |
+| [Explorer API](https://github.com/fastnear/explorer-api) | Transaction-based explorer API for account transfers and block history |
+| [QueryAPI](https://github.com/near/query-api) | NEAR Lake data indexing service for querying blockchain data |
+
+---
+
+## AI and Cloud Services
+
+| Package | Description |
+|---------|-------------|
+| [NEAR AI Cloud](https://cloud.near.ai) | Private inference platform for verifiably private AI inference |
+
+---
+
+## Shade Agent
+
+| Package | Description |
+|---------|-------------|
+| [new-shade](https://github.com/NearDeFi/new-shade) | Experimental Shade agent framework with CLI tools, JavaScript SDK, and agent templates for TEE deployment |
+
+---
+
+## Chain Signatures
+
+| Package | Description |
+|---------|-------------|
+| [chainsig.js](https://github.com/NearDeFi/chainsig.js) | TypeScript library for handling multi-chain transactions and signatures using MPC (Multi-Party Computation) |
+
+---
+
+## Explorers
+
+- [NEAR Validate](https://nearvalidate.org/)
+- [NearBlocks](https://nearblocks.io/)
+- [PikeSpeak](https://pikespeak.ai/)
+- [Near Intents Explorer](https://explorer.near-intents.org/)
+
+## Additional Resources
+
+- [NEAR Documentation](https://docs.near.org)
+- [NEAR Developer Chat](https://discord.com/invite/nearprotocol)
+- [NEAR Intens Documentation](https://docs.near-intents.org)
+- [NEP Specifications](https://github.com/near/NEPs)
+- [NEAR Blog](https://near.org/blog)
+
+---
+
+*To add a tool, submit a PR with: package name, one-line description.*
