@@ -23,7 +23,7 @@ A curated collection of repositories and tools for building on the NEAR Protocol
 
 | Package | Description |
 |---------|-------------|
-| [near-skills](https://github.com/NEARBuilders/near-skills) | AI agent skills for NEAR Protocol blockchain development |
+| [agent-skills](https://github.com/near/agent-skills) | AI agent skills for NEAR Protocol blockchain development |
 
 ---
 
