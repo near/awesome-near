@@ -2,10 +2,12 @@
 
 A curated collection of repositories and tools for building on the NEAR Protocol blockchain.
 
+NOTE: If you are looking for the products built on NEAR, check out [NEAR Catalog](https://nearcatalog.xyz/).
+
 ## Contents
 
 - [Skills](#skills)
-- [Official SDKs](#official-sdks)
+- [NEAR Protocol SDKs](#near-protocol-sdks)
 - [Wallet and Authentication](#wallet-and-authentication)
 - [CLI Tools](#cli-tools)
 - [Starter Templates](#starter-templates)
@@ -14,7 +16,7 @@ A curated collection of repositories and tools for building on the NEAR Protocol
 - [Near Intents](#near-intents)
 - [Shade Agent](#shade-agent)
 - [Chain Signatures](#chain-signatures)
-- [Explorers](#explores)
+- [Explorers](#explorers)
 - [Additional Resources](#additional-resources)
 
 ---
@@ -191,6 +193,7 @@ A curated collection of repositories and tools for building on the NEAR Protocol
 - [NEAR Intens Documentation](https://docs.near-intents.org)
 - [NEP Specifications](https://github.com/near/NEPs)
 - [NEAR Blog](https://near.org/blog)
+- [NEAR Catalog](https://nearcatalog.xyz/)
 
 ## Advanced Projects to Learn From
 
