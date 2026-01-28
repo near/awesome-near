@@ -150,8 +150,19 @@ NOTE: If you are looking for the products built on NEAR, check out [NEAR Catalog
 | [Goldsky](https://goldsky.com/chains/near) | NEAR Protocol data infrastructure and indexing service |
 | [Stream NEAR](https://stream.near.tools) | Server-Sent Events (SSE) stream for real-time NEAR block data |
 | [Explorer API](https://github.com/fastnear/explorer-api) | Transaction-based explorer API for account transfers and block history |
-| [QueryAPI](https://github.com/near/query-api) | NEAR Lake data indexing service for querying blockchain data |
+| [Near Lake Indexer](https://github.com/aurora-is-near/near-lake-indexer) | NEAR Lake data indexing service for querying blockchain data |
 | [Outlayer](https://outlayer.fastnear.com/) | Run any code with cryptographic proof that exactly the code you specified ran with the inputs you provided |
+
+---
+
+## Data APIs
+
+| Package | Description |
+|---------|-------------|
+| [FastNear API](https://github.com/fastnear/fastnear-api-server-rs) | FastNear's low-latency API for wallets and explorers |
+| [NearBlocks API](https://api.nearblocks.io/api-docs/) | NearBlock's REST APIs for accessing NEAR Protocol blockchain data |
+| [Pikespeak API](https://doc.pikespeak.ai/) | Pikespeak's API for aggregated analytics on wallets, validators and dApps activity |
+| [Allium API](https://docs.allium.so/api/developer/wallets/overview) | Allium's API focused on wallets and historical transactions  |
 
 ---
 
