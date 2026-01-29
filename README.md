@@ -187,6 +187,7 @@ NOTE: If you are looking for the products built on NEAR, check out [NEAR Catalog
 | Package | Description |
 |---------|-------------|
 | [chainsig.js](https://github.com/NearDeFi/chainsig.js) | TypeScript library for handling multi-chain transactions and signatures using MPC (Multi-Party Computation) |
+| [omni-transaction-rs](https://github.com/near/omni-transaction-rs) | Rust library to build transactions for all chains |
 
 ---
 
