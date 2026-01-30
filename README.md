@@ -140,6 +140,7 @@ NOTE: If you are looking for the products built on NEAR, check out [NEAR Catalog
 | [every-plugin](https://github.com/near-everything/every-plugin) | Composable, type-safe plugin runtime framework for remote plugin loading |
 | [near-sdk-rs-template](https://github.com/near/cargo-near-new-project-template) | GitHub Workspaces template for instant online IDE launch |
 | [near-fast-ft-transfer](https://github.com/NEAR-DevHub/NEAR-fast-ft-transfer) | High-performance REST API service for batching and distributing NEAR Protocol fungible tokens (FT) |
+| [Learn NEAR by Example](https://near.peersurf.xyz/) | Interactive learning platform with 60+ working smart contract examples, AI code assistant, and one-click TestNet deployment |
 
 ---
 
