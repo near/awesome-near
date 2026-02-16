@@ -1,4 +1,4 @@
-[[](url)](url)# Awesome NEAR Ecosystem
+# Awesome NEAR Ecosystem
 
 A curated collection of repositories and tools for building on the NEAR Protocol blockchain.
 
