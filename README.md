@@ -1,4 +1,4 @@
-# Awesome NEAR Ecosystem
+[[](url)](url)# Awesome NEAR Ecosystem
 
 A curated collection of repositories and tools for building on the NEAR Protocol blockchain.
 
@@ -58,7 +58,9 @@ NOTE: If you are looking for the products built on NEAR, check out [NEAR Catalog
 |---------|-------------|
 | [py-near](https://github.com/pvolnov/py-near) | Async Python client with HOT Protocol and NEAR Intents support |
 | [near-jsonrpc-client-py](https://github.com/near/near-jsonrpc-client-py) | Type-safe, Pythonic JSON-RPC client for NEAR Protocol with Pydantic models |
-| [near-sdk-py](https://github.com/r-near/near-sdk-py)| Python library for writing NEAR smart contracts (great for onboarding Python devs to blockchain, but not recommended for production) |
+| [near-sdk-py](https://github.com/r-near/near-sdk-py)| Python SDK for writing NEAR smart contracts (great for onboarding Python devs to blockchain, but not recommended for production) |
+| [nearc](https://github.com/r-near/nearc) | Minimal Python SDK for writing NEAR smart contracts (foundation for near-sdk-py) |
+| [monty-near-cli](https://github.com/r-near/monty-near-cli) | MontyPython-based implementation of Minimal Python SDK for writing NEAR smart contracts (experimental) |
 
 ### Swift
 
@@ -163,7 +165,8 @@ NOTE: If you are looking for the products built on NEAR, check out [NEAR Catalog
 | [FastNear API](https://github.com/fastnear/fastnear-api-server-rs) | FastNear's low-latency API for wallets and explorers |
 | [NearBlocks API](https://api.nearblocks.io/api-docs/) | NearBlock's REST APIs for accessing NEAR Protocol blockchain data |
 | [Pikespeak API](https://doc.pikespeak.ai/) | Pikespeak's API for aggregated analytics on wallets, validators and dApps activity |
-| [Allium API](https://docs.allium.so/api/developer/wallets/overview) | Allium's API focused on wallets and historical transactions  |
+| [Allium API](https://docs.allium.so/api/developer/wallets/overview) | Allium's API focused on wallets and historical transactions |
+| [OutLayer Price Oracle](https://price-oracle.outlayer.ai/) | TEE-Secured Price Oracle |
 
 ---
 
