@@ -226,7 +226,11 @@ Yet, we still recommend you use high-level programming languages to make your co
 
 - [core-contracts](https://github.com/near/core-contracts) - collection of the early core NEAR Protocol contracts that are still widely used (the SDKs are outdated, but the concepts are still relevant)
 - [omni-bridge](https://github.com/Near-One/omni-bridge) - one of the most advanced collection of NEAR Protocol smart contracts
+- [Aurora](https://github.com/aurora-is-near/aurora-engine) - EVM compiled to Wasm to run Solidity contracts inside a single account on NEAR Protocol
 - [sputnik-dao](https://github.com/near-daos/sputnik-dao-contract) - DAO contract implementation for NEAR Protocol
+- [web4](https://github.com/vgrichina/web4) - HTTP gateway that translates HTTP requests to NEAR Protocol function calls
+- [near-dns](https://github.com/frol/near-dns) - DNS gatewat that translates DNS queries to NEAR Protocol function calls
+- NEAR Social [Database Contract](https://github.com/NearSocial/social-db) + [VM](https://github.com/NearSocial/VM) + [viewer](https://github.com/NearSocial/viewer) - social profiles, social graph (followers), social posts, and even JS widgets stored on NEAR Protocol blockchain with a tiny bootstrapping core that loads all the code and data from the chain to display it to the users
 
 ---
 
