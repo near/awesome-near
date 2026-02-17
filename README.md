@@ -31,6 +31,11 @@ NOTE: If you are looking for the products built on NEAR, check out [NEAR Catalog
 
 ## NEAR Protocol SDKs
 
+### Wasm
+
+Smart contracts in NEAR Protocol as that simple that you [may write them in plain Wasm](https://gist.github.com/vgrichina/48c7cf061032a3508a3e180e823f1637).
+Yet, we still recommend you use high-level programming languages to make your code ergonimic.
+
 ### JavaScript / TypeScript
 
 | Package | Description |
@@ -80,6 +85,12 @@ NOTE: If you are looking for the products built on NEAR, check out [NEAR Catalog
 |---------|-------------|
 | [near-sdk-go](https://github.com/vlmoon99/near-sdk-go) | Go library for writing NEAR smart contracts (experimental) |
 | [near-api-go](https://github.com/aurora-is-near/near-api-go) | High-level Go off-chain client library for NEAR Protocol to get accounts, block, transactions, FT/NFT tokens information, and prepare & submit transactions, function calls |
+
+### Zig
+
+| Package | Description |
+|---------|-------------|
+| [near-sdk-zig](https://github.com/DaviRain-Su/near-sdk-zig) | Zig SDK for writing NEAR smart contracts |
 
 ### C# (.NET)
 
