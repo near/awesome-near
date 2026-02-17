@@ -65,13 +65,14 @@ Yet, we still recommend you use high-level programming languages to make your co
 | [near-jsonrpc-client-py](https://github.com/near/near-jsonrpc-client-py) | Type-safe, Pythonic JSON-RPC client for NEAR Protocol with Pydantic models |
 | [near-sdk-py](https://github.com/r-near/near-sdk-py)| Python SDK for writing NEAR smart contracts (great for onboarding Python devs to blockchain, but not recommended for production) |
 | [nearc](https://github.com/r-near/nearc) | Minimal Python SDK for writing NEAR smart contracts (foundation for near-sdk-py) |
-| [monty-near-cli](https://github.com/r-near/monty-near-cli) | MontyPython-based implementation of Minimal Python SDK for writing NEAR smart contracts (experimental) |
+| [monty-near-cli](https://github.com/r-near/monty-near-cli) | MontyPython-based proof-of-concept implementation of Minimal Python SDK for writing NEAR smart contracts (experimental) |
 
 ### Swift
 
 | Package | Description |
 |---------|-------------|
 | [near-jsonrpc-client-swift](https://github.com/space-rock/near-jsonrpc-swift) | Type-safe Swift JSON-RPC client with async/await support |
+| [near-sdk-swift](https://github.com/vlmoon99/near-sdk-swift) | Proof-of-concept Swift SDK for writing NEAR smart contracts |
 
 ### Kotlin
 
