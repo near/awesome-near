@@ -111,7 +111,9 @@ Yet, we still recommend you use high-level programming languages to make your co
 
 | Package | Description |
 |---------|-------------|
-| [@hot-labs/near-connect](https://github.com/azbang/near-connect) | Secure, lightweight wallet connector with sandboxed execution environment |
+| [@hot-labs/near-connect](https://github.com/azbang/near-connect) | Secure, lightweight wallet connector with sandboxed execution environment for JavaScript/TypeScript |
+| [near-connect-ios](https://github.com/frol/near-connect-ios) | Secure, lightweight wallet connector with sandboxed execution environment for iOS native apps (Swift) |
+| [near-connect-android](https://github.com/frol/near-connect-android) | Secure, lightweight wallet connector with sandboxed execution environment for Android native apps (Kotlin) |
 | [near-connect-hooks](https://github.com/matiasbenary/near-connect-hooks) | React hooks for NEAR wallet integration using @hot-labs/near-connect |
 | [near-sign-verify](https://github.com/elliotBraem/near-sign-verify) | Create and validate NEP-413 signed messages for API authentication |
 | [better-near-auth](https://github.com/elliotBraem/better-near-auth) | Sign in with NEAR (SIWN) plugin for Better Auth framework |
