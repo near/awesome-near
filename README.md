@@ -7,6 +7,7 @@ NOTE: If you are looking for the products built on NEAR, check out [NEAR Catalog
 ## Contents
 
 - [Skills](#skills)
+- [Testnet Faucets](#testnet-faucets)
 - [NEAR Protocol SDKs](#near-protocol-sdks)
 - [Wallet and Authentication](#wallet-and-authentication)
 - [CLI Tools](#cli-tools)
@@ -26,6 +27,13 @@ NOTE: If you are looking for the products built on NEAR, check out [NEAR Catalog
 | Package | Description |
 |---------|-------------|
 | [agent-skills](https://github.com/near/agent-skills) | AI agent skills for NEAR Protocol blockchain development |
+
+---
+
+## Testnet Faucets
+
+- https://faucet.circle.com/ - 20 USDC to be sent to NEAR Testnet (claimable every 2 hours)
+- https://near-faucet.io/ - 2 NEAR on Testnet (always claimable, but rate limited)
 
 ---
 
@@ -117,6 +125,7 @@ Yet, we still recommend you use high-level programming languages to make your co
 | [near-connect-hooks](https://github.com/matiasbenary/near-connect-hooks) | React hooks for NEAR wallet integration using @hot-labs/near-connect |
 | [near-sign-verify](https://github.com/elliotBraem/near-sign-verify) | Create and validate NEP-413 signed messages for API authentication |
 | [better-near-auth](https://github.com/elliotBraem/better-near-auth) | Sign in with NEAR (SIWN) plugin for Better Auth framework |
+| [Privy Social Login](https://docs.near.org/web3-apps/concepts/web-login#privy-social-login) | Social login integration for NEAR apps via Privy |
 
 ---
 
@@ -220,7 +229,7 @@ Yet, we still recommend you use high-level programming languages to make your co
 
 - [NEAR Documentation](https://docs.near.org)
 - [NEAR Developer Chat](https://discord.com/invite/nearprotocol)
-- [NEAR Intens Documentation](https://docs.near-intents.org)
+- [NEAR Intents Documentation](https://docs.near-intents.org)
 - [NEP Specifications](https://github.com/near/NEPs)
 - [NEAR Blog](https://near.org/blog)
 - [NEAR Catalog](https://nearcatalog.xyz/)
