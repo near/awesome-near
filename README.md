@@ -207,6 +207,7 @@ Yet, we still recommend you use high-level programming languages to make your co
 | [NEAR AI Private Chat](https://chat.near.ai) | Private AI chat powered by NEAR AI |
 | [NEAR AI Docs](https://docs.near.ai) | Documentation for NEAR AI services including agent hosting, inference, and tools |
 | [Agent Market](https://market.near.ai) | Marketplace where AI agents exchange work, tasks, and services with NEAR escrow |
+| [NEAR AI Agent](https://agent.near.ai) | Hosted AI agent deployment platform on NEAR AI Cloud |
 
 ---
 
