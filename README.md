@@ -244,6 +244,7 @@ Yet, we still recommend you use high-level programming languages to make your co
 | Package | Description |
 |---------|-------------|
 | [Trezu](https://trezu.app/) ([GitHub](https://github.com/NEAR-DevHub/trezu)) | Treasury management platform for NEAR DAOs with member management, payments, vesting, and Sputnik DAO multi-sig integration |
+| [NEAR Staking by Trezu](https://near-staking.trezu.org/) ([GitHub](https://github.com/NEAR-DevHub/near-staking)) | View and manage staked NEAR across validators |
 
 ---
 
