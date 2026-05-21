@@ -15,8 +15,10 @@ NOTE: If you are looking for the products built on NEAR, check out [NEAR Catalog
 - [Data Infrastructure](#data-infrastructure)
 - [AI and Cloud Services](#ai-and-cloud-services)
 - [Near Intents](#near-intents)
-- [Shade Agent](#shade-agent)
+- [Shade Agent](#shade-agent) *(deprecated)*
+- [IronClaw](#ironclaw)
 - [Chain Signatures](#chain-signatures)
+- [DAO Tools](#dao-tools)
 - [Explorers](#explorers)
 - [Additional Resources](#additional-resources)
 
@@ -121,6 +123,7 @@ Yet, we still recommend you use high-level programming languages to make your co
 
 | Package | Description |
 |---------|-------------|
+| [Privy NEAR Connect](https://github.com/beneviolabs/privy-near-connect) | NEAR wallet integration using Privy's embedded wallet infrastructure with near-connect sandboxed signing |
 | [@hot-labs/near-connect](https://github.com/azbang/near-connect) | Secure, lightweight wallet connector with sandboxed execution environment for JavaScript/TypeScript |
 | [near-connect-ios](https://github.com/frol/near-connect-ios) | Secure, lightweight wallet connector with sandboxed execution environment for iOS native apps (Swift) |
 | [near-connect-android](https://github.com/frol/near-connect-android) | Secure, lightweight wallet connector with sandboxed execution environment for Android native apps (Kotlin) |
@@ -150,6 +153,7 @@ Yet, we still recommend you use high-level programming languages to make your co
 
 | Package | Description |
 |---------|-------------|
+| [near-hydra](https://github.com/nikshepsvn/near-hydra) | All-in-one CLI + MCP server for Chain Signatures and NEAR Intents across 10 chains, built for AI agents |
 | [near-cli-rs](https://github.com/near/near-cli-rs) | Human-friendly interactive CLI for NEAR Protocol interactions |
 | [create-near-app](https://github.com/near/create-near-app) | Scaffold NEAR dApps with frontend and contract templates |
 | [cargo-near](https://github.com/near/cargo-near) | Cargo extension for building and deploying Rust smart contracts with ABI generation |
@@ -200,14 +204,30 @@ Yet, we still recommend you use high-level programming languages to make your co
 | Package | Description |
 |---------|-------------|
 | [NEAR AI Cloud](https://cloud.near.ai) | Private inference platform for verifiably private AI inference |
+| [NEAR AI Private Chat](https://chat.near.ai) | Private AI chat powered by NEAR AI |
+| [NEAR AI Docs](https://docs.near.ai) | Documentation for NEAR AI services including agent hosting, inference, and tools |
+| [Agent Market](https://market.near.ai) | Marketplace where AI agents exchange work, tasks, and services with NEAR escrow |
+| [NEAR AI Agent](https://agent.near.ai) | Hosted AI agent deployment platform on NEAR AI Cloud |
 
 ---
 
 ## Shade Agent
 
+> **Deprecated** — This project is no longer maintained.
+
 | Package | Description |
 |---------|-------------|
 | [new-shade](https://github.com/NearDeFi/new-shade) | Experimental Shade agent framework with CLI tools, JavaScript SDK, and agent templates for TEE deployment |
+
+---
+
+## IronClaw
+
+| Package | Description |
+|---------|-------------|
+| [IronClaw](https://github.com/nearai/ironclaw) | Open-source Agent OS focused on privacy, security, and extensibility with WASM sandbox, encrypted vault, and multi-channel support |
+| [IronHub](https://hub.ironclaw.com) | Extension hub for browsing, installing, and publishing repo-backed IronClaw skills and tools ([GitHub](https://github.com/nearai/ironhub)) |
+| [IronClaw Cloud](https://ironclaw.com) | Hosted IronClaw on NEAR AI Cloud with Trusted Execution Environments and one-click deployment |
 
 ---
 
@@ -217,6 +237,15 @@ Yet, we still recommend you use high-level programming languages to make your co
 |---------|-------------|
 | [chainsig.js](https://github.com/NearDeFi/chainsig.js) | TypeScript library for handling multi-chain transactions and signatures using MPC (Multi-Party Computation) |
 | [omni-transaction-rs](https://github.com/near/omni-transaction-rs) | Rust library to build transactions for all chains |
+
+---
+
+## DAO Tools
+
+| Package | Description |
+|---------|-------------|
+| [Trezu](https://trezu.app/) ([GitHub](https://github.com/NEAR-DevHub/trezu)) | Treasury management platform for NEAR DAOs with member management, payments, vesting, and Sputnik DAO multi-sig integration |
+| [NEAR Staking by Trezu](https://near-staking.trezu.org/) ([GitHub](https://github.com/NEAR-DevHub/near-staking)) | View and manage staked NEAR across validators |
 
 ---
 
