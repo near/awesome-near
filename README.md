@@ -159,6 +159,7 @@ Yet, we still recommend you use high-level programming languages to make your co
 | [cargo-near](https://github.com/near/cargo-near) | Cargo extension for building and deploying Rust smart contracts with ABI generation |
 | [near-validator-cli-rs](https://github.com/near/near-validator-cli-rs) | Human-friendly companion that helps to manage native NEAR stake and troubleshoot NEAR network |
 | [bos-cli-rs](https://github.com/bos-cli-rs/bos-cli-rs) | CLI that simplifies local component development for NEAR BOS |
+| [edky](https://github.com/artob/edky) | Convert Ed25519 public keys between various encoding formats (NEAR, iroh, libp2p, IPFS, OpenSSH, etc) |
 
 ---
 
