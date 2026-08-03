@@ -38,6 +38,7 @@ NOTE: If you are looking for the products built on NEAR, check out [NEAR Catalog
 |--------|-------------|
 | [Circle Faucet](https://faucet.circle.com/) | 20 USDC to be sent to NEAR Testnet (claimable every 2 hours) |
 | [NEAR Faucet](https://near-faucet.io/) | 2 NEAR on Testnet (always claimable, but rate limited) |
+| [Testnet Faucets](https://testnetfaucets.dev) | Directory of testnet faucets across 40+ networks, health-checked daily and verified on-chain; free JSON API |
 
 ---
 
