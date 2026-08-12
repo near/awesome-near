@@ -180,6 +180,7 @@ Yet, we still recommend you use high-level programming languages to make your co
 
 | Package | Description |
 |---------|-------------|
+| [OpenChainBench](https://openchainbench.com) | Independent RPC latency and L1 finality benchmarks for NEAR and 20+ chains. Open-source, MIT licensed. |
 | [Goldsky](https://goldsky.com/chains/near) | NEAR Protocol data infrastructure and indexing service |
 | [Stream NEAR](https://stream.near.tools) | Server-Sent Events (SSE) stream for real-time NEAR block data |
 | [Explorer API](https://github.com/fastnear/explorer-api) | Transaction-based explorer API for account transfers and block history |
