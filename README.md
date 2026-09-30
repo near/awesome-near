@@ -29,6 +29,7 @@ NOTE: If you are looking for the products built on NEAR, check out [NEAR Catalog
 | Package | Description |
 |---------|-------------|
 | [agent-skills](https://github.com/near/agent-skills) | AI agent skills for NEAR Protocol blockchain development |
+| [sodax skill](https://www.sodax.com/skill.md) | AI coding agent skill for SODAX: intent-based trading, lending, and asset transfers between NEAR and 20+ other networks with `@sodax/sdk` |
 
 ---
 
