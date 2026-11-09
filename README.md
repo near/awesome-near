@@ -275,6 +275,7 @@ Yet, we still recommend you use high-level programming languages to make your co
 - [web4](https://github.com/vgrichina/web4) - HTTP gateway that translates HTTP requests to NEAR Protocol function calls
 - [near-dns](https://github.com/frol/near-dns) - DNS gatewat that translates DNS queries to NEAR Protocol function calls
 - NEAR Social [Database Contract](https://github.com/NearSocial/social-db) + [VM](https://github.com/NearSocial/VM) + [viewer](https://github.com/NearSocial/viewer) - social profiles, social graph (followers), social posts, and even JS widgets stored on NEAR Protocol blockchain with a tiny bootstrapping core that loads all the code and data from the chain to display it to the users
+- [ihatecrypto](https://github.com/ihatecryptoai/ihatecrypto) - open-source self-custody wallet (Swift for Mac, Rust for Windows) using 1Click and Confidential Intents for private sends and swaps, NEP-413 and NEP-366 signing for an agent wallet on the Agent API, and NEAR AI Cloud attestation checks for a private chat model
 
 ---
 
